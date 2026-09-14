@@ -262,7 +262,7 @@ CONTENT = {
 "Sparios’ta Ayarlar › Sparios Pro › <strong>İndirim kodu kullan</strong>’a dokun ve kodu Apple’ın açtığı ekrana gir. Kodlar App Store uygulamasındaki hesap sayfandan da kullanılabilir.",
 ]),
 ("Verilerimi yeni iPhone’a nasıl taşırım?", [
-"İki iPhone’u yan yana koy ve ikisinde de Sparios’u aç. Yeni iPhone’da kurulum sırasında “Eski iPhone’dan aktar”ı seç; ekranda 6 haneli bir kod çıkar. Eski iPhone’da Ayarlar › Veri yönetimi › <strong>Başka iPhone’a aktar</strong>’a dokun, yeni cihazı seç ve kodu gir. Veriler iki cihaz arasında doğrudan ve şifreli aktarılır.",
+"İki iPhone’u yan yana koy ve ikisinde de Sparios’u aç. Yeni iPhone’da kurulum sırasında “Eski iPhone’dan aktar”ı (ya da Ayarlar › Veri yönetimi › Cihaz aktarımı › “Bu yeni iPhone’um”) seç; ekranda 6 haneli bir kod çıkar. Eski iPhone’da Ayarlar › Veri yönetimi › <strong>Cihaz aktarımı</strong> › “Bu eski iPhone’um”a dokun, yeni cihazı seç ve kodu gir. Veriler iki cihaz arasında doğrudan ve şifreli aktarılır.",
 "Aktarımdan sonra yeni iPhone’da Apple Pay otomasyonunu yeniden kurman gerekir; Kestirmeler otomasyonları cihazlar arasında taşınmaz.",
 ]),
 ("Asistan kullanılamıyor diyor", [
@@ -291,7 +291,7 @@ CONTENT = {
 "In Sparios tap Settings › Sparios Pro › <strong>Redeem code</strong> and enter the code on the screen Apple shows. You can also redeem codes from your account page in the App Store app.",
 ]),
 ("How do I move my data to a new iPhone?", [
-"Place both iPhones next to each other and open Sparios on both. On the new iPhone, choose “Transfer from old iPhone” during setup; a 6-digit code appears. On the old iPhone tap Settings › Data management › <strong>Transfer to another iPhone</strong>, pick the new device and enter the code. Your data moves directly and encrypted between the two devices.",
+"Place both iPhones next to each other and open Sparios on both. On the new iPhone, choose “Transfer from old iPhone” during setup (or Settings › Data management › Device transfer › “This is my new iPhone”); a 6-digit code appears. On the old iPhone tap Settings › Data management › <strong>Device transfer</strong> › “This is my old iPhone”, pick the new device and enter the code. Your data moves directly and encrypted between the two devices.",
 "After the transfer, set up the Apple Pay automation again on the new iPhone — Shortcuts automations don’t move between devices.",
 ]),
 ("The Assistant says it’s unavailable", [
@@ -320,7 +320,7 @@ CONTENT = {
 "Tippe in Sparios auf Einstellungen › Sparios Pro › <strong>Code einlösen</strong> und gib den Code im Apple-Fenster ein. Codes lassen sich auch über deine Accountseite in der App-Store-App einlösen.",
 ]),
 ("Wie übertrage ich meine Daten auf ein neues iPhone?", [
-"Lege beide iPhones nebeneinander und öffne auf beiden Sparios. Wähle auf dem neuen iPhone bei der Einrichtung „Vom alten iPhone übertragen“; ein 6-stelliger Code erscheint. Tippe auf dem alten iPhone auf Einstellungen › Datenverwaltung › <strong>Auf anderes iPhone übertragen</strong>, wähle das neue Gerät und gib den Code ein. Die Daten werden direkt und verschlüsselt zwischen beiden Geräten übertragen.",
+"Lege beide iPhones nebeneinander und öffne auf beiden Sparios. Wähle auf dem neuen iPhone bei der Einrichtung „Vom alten iPhone übertragen“ (oder Einstellungen › Datenverwaltung › Geräteübertragung › „Das ist mein neues iPhone“); ein 6-stelliger Code erscheint. Tippe auf dem alten iPhone auf Einstellungen › Datenverwaltung › <strong>Geräteübertragung</strong> › „Das ist mein altes iPhone“, wähle das neue Gerät und gib den Code ein. Die Daten werden direkt und verschlüsselt zwischen beiden Geräten übertragen.",
 "Richte danach die Apple-Pay-Automation auf dem neuen iPhone neu ein – Kurzbefehle-Automationen werden nicht zwischen Geräten übertragen.",
 ]),
 ("Der Assistent ist nicht verfügbar", [
