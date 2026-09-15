@@ -10,7 +10,7 @@ import shutil
 
 OUT = "docs"
 EMAIL = "tasarahmeteren@gmail.com"
-UPDATED = {"tr": "14 Eylül 2026", "en": "14 September 2026", "de": "14. September 2026"}
+UPDATED = {"tr": "15 Eylül 2026", "en": "15 September 2026", "de": "15. September 2026"}
 LANGS = ["tr", "en", "de"]
 PAGES = ["privacy", "terms", "support", "accessibility"]
 EULA = "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
@@ -82,7 +82,7 @@ CONTENT = {
 "Sparios, Cüzdan geçmişini veya banka hesabını okumaz. Kayıtlar yalnızca senin Kestirmeler uygulamasında kendin kurduğun otomasyon Sparios’a bir ödeme gönderdiğinde oluşur. Hangi kartların izleneceğine sen karar verirsin.",
 ]),
 ("Asistan", [
-"Asistan, Apple’ın cihaz içi dil modelini (Apple Intelligence) kullanır. Soruların ve yanıtlar iPhone’undan çıkmaz; hiçbir bulut yapay zekâ hizmetine gönderilmez. Model harcamalarını değiştiremez veya silemez.",
+"Asistan sorularını iPhone’unda anlar ve cevapları yalnızca kendi kayıtlarından hesaplar. Apple Intelligence destekleyen cihazlarda, cevabın cümleleri Apple’ın cihaz içi dil modeliyle daha doğal hâle getirilebilir. Soruların ve yanıtlar iPhone’undan çıkmaz; hiçbir bulut yapay zekâ hizmetine gönderilmez. Asistan harcamalarını değiştiremez veya silemez.",
 ]),
 ("Bildirimler", [
 "Tüm bildirimler cihazında oluşturulur. Kilit ekranında işletme adı veya tutar gösterilmez.",
@@ -117,7 +117,7 @@ CONTENT = {
 "Sparios does not read your Wallet history or bank account. Records are created only when an automation you set up yourself in the Shortcuts app sends a payment to Sparios. You decide which cards are included.",
 ]),
 ("Assistant", [
-"The Assistant uses Apple’s on-device language model (Apple Intelligence). Your questions and its answers never leave your iPhone and are not sent to any cloud AI service. The model cannot change or delete your expenses.",
+"The Assistant understands your questions on your iPhone and calculates answers only from your own entries. On devices that support Apple Intelligence, Apple’s on-device language model may make the wording more natural. Your questions and its answers never leave your iPhone and are not sent to any cloud AI service. The Assistant cannot change or delete your expenses.",
 ]),
 ("Notifications", [
 "All notifications are created on your device. Merchant names and amounts are not shown on the Lock Screen.",
@@ -152,7 +152,7 @@ CONTENT = {
 "Sparios liest weder deinen Wallet-Verlauf noch dein Bankkonto. Einträge entstehen nur, wenn eine Automation, die du selbst in der Kurzbefehle-App eingerichtet hast, eine Zahlung an Sparios übergibt. Du bestimmst, welche Karten dazugehören.",
 ]),
 ("Assistent", [
-"Der Assistent nutzt Apples geräteinternes Sprachmodell (Apple Intelligence). Deine Fragen und die Antworten verlassen dein iPhone nicht und werden an keinen Cloud-KI-Dienst gesendet. Das Modell kann deine Ausgaben weder ändern noch löschen.",
+"Der Assistent versteht deine Fragen auf deinem iPhone und berechnet die Antworten nur aus deinen eigenen Einträgen. Auf Geräten mit Apple Intelligence kann Apples geräteinternes Sprachmodell die Formulierung natürlicher machen. Deine Fragen und die Antworten verlassen dein iPhone nicht und werden an keinen Cloud-KI-Dienst gesendet. Der Assistent kann deine Ausgaben weder ändern noch löschen.",
 ]),
 ("Mitteilungen", [
 "Alle Mitteilungen werden auf deinem Gerät erzeugt. Händlernamen und Beträge erscheinen nicht auf dem Sperrbildschirm.",
@@ -265,8 +265,8 @@ CONTENT = {
 "İki iPhone’u yan yana koy ve ikisinde de Sparios’u aç. Yeni iPhone’da kurulum sırasında “Eski iPhone’dan aktar”ı (ya da Ayarlar › Veri yönetimi › Cihaz aktarımı › “Bu yeni iPhone’um”) seç; ekranda 6 haneli bir kod çıkar. Eski iPhone’da Ayarlar › Veri yönetimi › <strong>Cihaz aktarımı</strong> › “Bu eski iPhone’um”a dokun, yeni cihazı seç ve kodu gir. Veriler iki cihaz arasında doğrudan ve şifreli aktarılır.",
 "Aktarımdan sonra yeni iPhone’da Apple Pay otomasyonunu yeniden kurman gerekir; Kestirmeler otomasyonları cihazlar arasında taşınmaz.",
 ]),
-("Asistan kullanılamıyor diyor", [
-"Asistan, Apple Intelligence destekleyen bir iPhone’da iOS 26 veya sonrasını ve Ayarlar’da Apple Intelligence’ın açık olmasını gerektirir. Model ilk açılışta indirilirken bir süre beklemen gerekebilir.",
+("Asistan hangi cihazlarda çalışır?", [
+"Asistan, Sparios’u çalıştıran her iPhone’da çalışır; cevaplar anında ve cihazında hesaplanır. Apple Intelligence destekleyen ve açık olan bir iPhone’da (iOS 26 veya sonrası) cevapların cümleleri ek olarak daha doğal hâle getirilir. Sparios Pro gerektirir.",
 ]),
 ("Tüm verilerimi nasıl silerim?", [
 "Ayarlar › Veri yönetimi › <strong>Tüm verilerimi sil</strong>. Bu işlem geri alınamaz. Verilerin yalnızca cihazında olduğu için bizim tarafımızda silinecek bir kopya yoktur.",
@@ -294,8 +294,8 @@ CONTENT = {
 "Place both iPhones next to each other and open Sparios on both. On the new iPhone, choose “Transfer from old iPhone” during setup (or Settings › Data management › Device transfer › “This is my new iPhone”); a 6-digit code appears. On the old iPhone tap Settings › Data management › <strong>Device transfer</strong> › “This is my old iPhone”, pick the new device and enter the code. Your data moves directly and encrypted between the two devices.",
 "After the transfer, set up the Apple Pay automation again on the new iPhone — Shortcuts automations don’t move between devices.",
 ]),
-("The Assistant says it’s unavailable", [
-"The Assistant needs an iPhone that supports Apple Intelligence, iOS 26 or later, and Apple Intelligence turned on in Settings. The model may take a while to download the first time.",
+("Which devices does the Assistant work on?", [
+"The Assistant works on every iPhone that runs Sparios; answers are calculated instantly on your device. On an iPhone with Apple Intelligence turned on (iOS 26 or later), the wording of answers is additionally made more natural. Requires Sparios Pro.",
 ]),
 ("How do I delete all my data?", [
 "Settings › Data management › <strong>Delete all my data</strong>. This can’t be undone. Because your data only exists on your device, there is no copy on our side to delete.",
@@ -323,8 +323,8 @@ CONTENT = {
 "Lege beide iPhones nebeneinander und öffne auf beiden Sparios. Wähle auf dem neuen iPhone bei der Einrichtung „Vom alten iPhone übertragen“ (oder Einstellungen › Datenverwaltung › Geräteübertragung › „Das ist mein neues iPhone“); ein 6-stelliger Code erscheint. Tippe auf dem alten iPhone auf Einstellungen › Datenverwaltung › <strong>Geräteübertragung</strong> › „Das ist mein altes iPhone“, wähle das neue Gerät und gib den Code ein. Die Daten werden direkt und verschlüsselt zwischen beiden Geräten übertragen.",
 "Richte danach die Apple-Pay-Automation auf dem neuen iPhone neu ein – Kurzbefehle-Automationen werden nicht zwischen Geräten übertragen.",
 ]),
-("Der Assistent ist nicht verfügbar", [
-"Der Assistent benötigt ein iPhone mit Apple Intelligence, iOS 26 oder neuer und eingeschaltete Apple Intelligence in den Einstellungen. Beim ersten Mal kann das Laden des Modells etwas dauern.",
+("Auf welchen Geräten funktioniert der Assistent?", [
+"Der Assistent funktioniert auf jedem iPhone, auf dem Sparios läuft; Antworten werden sofort auf dem Gerät berechnet. Auf einem iPhone mit eingeschalteter Apple Intelligence (iOS 26 oder neuer) wird die Formulierung zusätzlich natürlicher. Erfordert Sparios Pro.",
 ]),
 ("Wie lösche ich alle meine Daten?", [
 "Einstellungen › Datenverwaltung › <strong>Alle meine Daten löschen</strong>. Das lässt sich nicht rückgängig machen. Da deine Daten nur auf deinem Gerät liegen, gibt es bei uns keine Kopie zu löschen.",
