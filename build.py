@@ -180,7 +180,7 @@ CONTENT = {
 "Sparios’u App Store’dan indirerek <a href=\"{eula}\">Apple Standart Lisans Sözleşmesi (EULA)</a> kapsamında kullanırsın. Bu sayfa, o sözleşmeye ek olarak uygulamaya özgü birkaç noktayı açıklar.",
 ]),
 ("Sparios Pro aboneliği", [
-"Sparios’un temel özellikleri ücretsizdir. Sparios Pro; Asistan, Pusula ay sonu tahminleri ve senaryolar, kişisel içgörüler ve akıllı bildirimleri açar. Aylık ve yıllık seçenekler vardır; güncel fiyatlar satın almadan önce uygulamada ve App Store’da gösterilir.",
+"Sparios’un temel özellikleri ücretsizdir. Sparios Pro; Asistan, Pusula ay sonu tahminleri ve senaryolar, “Sparios’u yen” yarışı, ana ekran widget’ları, kişisel içgörüler ve akıllı bildirimleri açar. Aylık ve yıllık seçenekler vardır; güncel fiyatlar satın almadan önce uygulamada ve App Store’da gösterilir.",
 "Ödeme, satın alma onayıyla Apple Kimliği hesabından alınır. Abonelik, mevcut dönem bitmeden en az 24 saat önce iptal edilmezse aynı süre ve fiyatla otomatik olarak yenilenir. Aboneliğini iPhone’unda Ayarlar › [adın] › Abonelikler bölümünden yönetebilir veya iptal edebilirsin. İptal, mevcut dönemin sonunda geçerli olur.",
 "İade talepleri Apple tarafından değerlendirilir: <a href=\"https://reportaproblem.apple.com\">reportaproblem.apple.com</a>. İndirim ve teklif kodları App Store üzerinden kullanılır.",
 ]),
@@ -202,7 +202,7 @@ CONTENT = {
 "When you download Sparios from the App Store you use it under the <a href=\"{eula}\">Apple Standard Licensed Application End User License Agreement (EULA)</a>. This page adds a few points specific to the app.",
 ]),
 ("Sparios Pro subscription", [
-"Sparios’s core features are free. Sparios Pro unlocks the Assistant, Compass end-of-month forecasts and scenarios, personal insights and smart notifications. Monthly and yearly options are available; current prices are shown in the app and on the App Store before you buy.",
+"Sparios’s core features are free. Sparios Pro unlocks the Assistant, Compass end-of-month forecasts and scenarios, the “Beat Sparios” race, home screen widgets, personal insights and smart notifications. Monthly and yearly options are available; current prices are shown in the app and on the App Store before you buy.",
 "Payment is charged to your Apple Account at confirmation of purchase. The subscription renews automatically for the same period and price unless cancelled at least 24 hours before the end of the current period. You can manage or cancel it on your iPhone in Settings › [your name] › Subscriptions. Cancellation takes effect at the end of the current period.",
 "Refunds are handled by Apple: <a href=\"https://reportaproblem.apple.com\">reportaproblem.apple.com</a>. Offer and discount codes are redeemed through the App Store.",
 ]),
@@ -224,7 +224,7 @@ CONTENT = {
 "Wenn du Sparios aus dem App Store lädst, nutzt du die App gemäß der <a href=\"{eula}\">Apple-Standard-Endbenutzer-Lizenzvereinbarung (EULA)</a>. Diese Seite ergänzt einige App-spezifische Punkte.",
 ]),
 ("Sparios-Pro-Abo", [
-"Die Grundfunktionen von Sparios sind kostenlos. Sparios Pro schaltet den Assistenten, Kompass-Prognosen zum Monatsende und Szenarien, persönliche Einblicke und intelligente Mitteilungen frei. Es gibt ein Monats- und ein Jahresabo; die aktuellen Preise werden vor dem Kauf in der App und im App Store angezeigt.",
+"Die Grundfunktionen von Sparios sind kostenlos. Sparios Pro schaltet den Assistenten, Kompass-Prognosen zum Monatsende und Szenarien, das Rennen „Sparios schlagen“, Widgets für den Home-Bildschirm, persönliche Einblicke und intelligente Mitteilungen frei. Es gibt ein Monats- und ein Jahresabo; die aktuellen Preise werden vor dem Kauf in der App und im App Store angezeigt.",
 "Die Zahlung wird bei Kaufbestätigung über deinen Apple Account abgerechnet. Das Abo verlängert sich automatisch zum gleichen Zeitraum und Preis, sofern es nicht mindestens 24 Stunden vor Ende des laufenden Zeitraums gekündigt wird. Du kannst es auf deinem iPhone unter Einstellungen › [dein Name] › Abonnements verwalten oder kündigen. Die Kündigung wird zum Ende des laufenden Zeitraums wirksam.",
 "Erstattungen wickelt Apple ab: <a href=\"https://reportaproblem.apple.com\">reportaproblem.apple.com</a>. Angebots- und Rabattcodes werden über den App Store eingelöst.",
 ]),
@@ -268,6 +268,9 @@ CONTENT = {
 ("Asistan hangi cihazlarda çalışır?", [
 "Asistan, Sparios’u çalıştıran her iPhone’da çalışır; cevaplar anında ve cihazında hesaplanır. Apple Intelligence destekleyen ve açık olan bir iPhone’da (iOS 26 veya sonrası) cevapların cümleleri ek olarak daha doğal hâle getirilir. Sparios Pro gerektirir.",
 ]),
+("Widget'ları nasıl eklerim?", [
+"Ana ekranda boş bir yere basılı tut, sol üstteki <strong>+</strong> düğmesine dokun ve listeden Sparios'u seç. Dört widget vardır: ay sonu tahmini, “Sparios'u yen” yarışı, bu ayın kategori dağılımı ve bu hafta. Widget'lar Sparios Pro gerektirir ve uygulamanın hesapladığı son değerleri gösterir; uygulamayı açtığında güncellenirler.",
+]),
 ("Tüm verilerimi nasıl silerim?", [
 "Ayarlar › Veri yönetimi › <strong>Tüm verilerimi sil</strong>. Bu işlem geri alınamaz. Verilerin yalnızca cihazında olduğu için bizim tarafımızda silinecek bir kopya yoktur.",
 ]),
@@ -297,6 +300,9 @@ CONTENT = {
 ("Which devices does the Assistant work on?", [
 "The Assistant works on every iPhone that runs Sparios; answers are calculated instantly on your device. On an iPhone with Apple Intelligence turned on (iOS 26 or later), the wording of answers is additionally made more natural. Requires Sparios Pro.",
 ]),
+("How do I add the widgets?", [
+"Touch and hold an empty spot on your Home Screen, tap <strong>+</strong> in the top left and pick Sparios. There are four widgets: month-end forecast, the “Beat Sparios” race, this month by category and this week. Widgets require Sparios Pro and show the latest figures the app calculated; they refresh when you open the app.",
+]),
 ("How do I delete all my data?", [
 "Settings › Data management › <strong>Delete all my data</strong>. This can’t be undone. Because your data only exists on your device, there is no copy on our side to delete.",
 ]),
@@ -325,6 +331,9 @@ CONTENT = {
 ]),
 ("Auf welchen Geräten funktioniert der Assistent?", [
 "Der Assistent funktioniert auf jedem iPhone, auf dem Sparios läuft; Antworten werden sofort auf dem Gerät berechnet. Auf einem iPhone mit eingeschalteter Apple Intelligence (iOS 26 oder neuer) wird die Formulierung zusätzlich natürlicher. Erfordert Sparios Pro.",
+]),
+("Wie füge ich die Widgets hinzu?", [
+"Halte eine freie Stelle auf dem Home-Bildschirm gedrückt, tippe oben links auf <strong>+</strong> und wähle Sparios. Es gibt vier Widgets: Prognose zum Monatsende, das Rennen „Sparios schlagen“, dieser Monat nach Kategorien und diese Woche. Die Widgets setzen Sparios Pro voraus und zeigen die zuletzt von der App berechneten Werte; sie aktualisieren sich, wenn du die App öffnest.",
 ]),
 ("Wie lösche ich alle meine Daten?", [
 "Einstellungen › Datenverwaltung › <strong>Alle meine Daten löschen</strong>. Das lässt sich nicht rückgängig machen. Da deine Daten nur auf deinem Gerät liegen, gibt es bei uns keine Kopie zu löschen.",
