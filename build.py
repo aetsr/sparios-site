@@ -10,7 +10,7 @@ import shutil
 
 OUT = "docs"
 EMAIL = "tasarahmeteren@gmail.com"
-UPDATED = {"tr": "18 Eylül 2026", "en": "18 September 2026", "de": "18. September 2026"}
+UPDATED = {"tr": "19 Eylül 2026", "en": "19 September 2026", "de": "19. September 2026"}
 LANGS = ["tr", "en", "de"]
 PAGES = ["privacy", "terms", "support", "accessibility"]
 EULA = "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
@@ -70,16 +70,20 @@ CONTENT = {
 "privacy": {
 "tr": [
 ("Kısaca", [
-"Sparios bir hesap istemez, bir sunucuya bağlanmaz ve senin hakkında hiçbir veri toplamaz, satmaz ya da paylaşmaz. Harcamaların, kategorilerin, hedeflerin ve Asistan sohbetlerin yalnızca iPhone’undaki uygulama klasöründe saklanır.",
+"Sparios bir hesap istemez, kendi sunucusu yoktur ve senin hakkında hiçbir veri toplamaz, satmaz ya da paylaşmaz. Harcamaların, gelirlerin, bütçen, hedeflerin ve Asistan sohbetlerin yalnızca iPhone’undaki uygulama klasöründe saklanır. Tek istisna, senin açabileceğin döviz kuru indirmesidir (aşağıda); o da hiçbir veri göndermez.",
 "Uygulamada reklam, analiz, izleme veya çökme raporlama aracı yoktur. App Store gizlilik etiketimiz bu yüzden “Veri Toplanmaz”dır.",
 ]),
 ("Cihazında saklananlar", [
-"Harcama kayıtları (tutar, para birimi, işletme adı, tarih, isteğe bağlı kart etiketi ve not), kategoriler ve öğrenilen kategori kuralları, harcama hedefleri, içgörülere verdiğin geri bildirimler, Asistan sohbet geçmişi ve uygulama tercihlerin.",
+"Harcama kayıtları (tutar, para birimi, işletme adı, tarih, isteğe bağlı kart etiketi ve not), gelirler, sabit ödemeler, birikim hedefleri ve döviz kurları, kategoriler ve öğrenilen kategori kuralları, harcama hedefleri, içgörülere verdiğin geri bildirimler, Asistan sohbet geçmişi ve uygulama tercihlerin.",
 "Otomasyonun neden kayıt oluşturmadığını anlamana yardım eden yerel bir tanılama günlüğü tutulur. Bu günlük tutar, işletme adı veya kart bilgisi içermez; yalnızca alanların gelip gelmediğini kaydeder, en fazla 7 gün saklanır ve Ayarlar’dan kapatılıp temizlenebilir.",
 "Veriler iOS dosya veri korumasıyla saklanır ve uygulama yedeğinden (iCloud/bilgisayar yedeği) hariç tutulur. Bu, uygulamayı silersen verilerin de silineceği anlamına gelir.",
 ]),
 ("Apple Pay otomasyonu", [
 "Sparios, Cüzdan geçmişini veya banka hesabını okumaz. Kayıtlar yalnızca senin Kestirmeler uygulamasında kendin kurduğun otomasyon Sparios’a bir ödeme gönderdiğinde oluşur. Hangi kartların izleneceğine sen karar verirsin.",
+]),
+("Döviz kurları", [
+"Bütçen başka para birimindeki gelir ve giderleri ana birimine çevirmek için kur kullanır. Kuru kendin girebilirsin ya da <strong>isteğe bağlı</strong> olarak indirmeyi açabilirsin. İndirme varsayılan olarak kapalıdır; yalnız tek bir para birimi kullanıyorsan Sparios hiç internete çıkmaz.",
+"Açarsan Sparios günde en fazla bir kez Avrupa Merkez Bankası’nın herkese açık günlük kur tablosunu indirir. Bu istekle hiçbir veri gönderilmez: hesap, cihaz kimliği ya da harcama/gelir bilgisi yoktur. Her web isteğinde olduğu gibi iPhone’unun IP adresi bankanın sunucusuna ulaşır; Sparios bu isteği görmez ve kaydetmez. Ayarlar › Para birimi ve kur’dan dilediğin an kapatabilirsin.",
 ]),
 ("Asistan", [
 "Asistan sorularını iPhone’unda anlar ve cevapları yalnızca kendi kayıtlarından hesaplar. Apple Intelligence destekleyen cihazlarda, cevabın cümleleri Apple’ın cihaz içi dil modeliyle daha doğal hâle getirilebilir. Soruların ve yanıtlar iPhone’undan çıkmaz; hiçbir bulut yapay zekâ hizmetine gönderilmez. Asistan harcamalarını değiştiremez veya silemez.",
@@ -107,16 +111,20 @@ CONTENT = {
 ],
 "en": [
 ("In short", [
-"Sparios doesn’t ask for an account, doesn’t connect to a server, and doesn’t collect, sell or share any data about you. Your expenses, categories, goals and Assistant chats are stored only in the app’s folder on your iPhone.",
+"Sparios doesn’t ask for an account, has no server of its own, and doesn’t collect, sell or share any data about you. Your expenses, income, budget, goals and Assistant chats are stored only in the app’s folder on your iPhone. The one exception is the exchange-rate download you can choose to turn on (below), and it sends no data.",
 "There are no ads, analytics, tracking or crash-reporting tools in the app. That’s why our App Store privacy label is “Data Not Collected”.",
 ]),
 ("What is stored on your device", [
-"Expense records (amount, currency, merchant name, date, optional card label and note), categories and learned category rules, spending goals, feedback you give on insights, Assistant chat history and your app preferences.",
+"Expense records (amount, currency, merchant name, date, optional card label and note), income, fixed payments, savings goals and exchange rates, categories and learned category rules, spending goals, feedback you give on insights, Assistant chat history and your app preferences.",
 "A local diagnostics log helps you understand why an automation didn’t create a record. It never contains amounts, merchant names or card details — only whether each field arrived. It is kept for at most 7 days and can be turned off and cleared in Settings.",
 "Data is stored with iOS file data protection and excluded from app backups (iCloud or computer). This means deleting the app also deletes your data.",
 ]),
 ("Apple Pay automation", [
 "Sparios does not read your Wallet history or bank account. Records are created only when an automation you set up yourself in the Shortcuts app sends a payment to Sparios. You decide which cards are included.",
+]),
+("Exchange rates", [
+"Your budget uses exchange rates to convert income and expenses in other currencies into your main currency. You can enter a rate yourself or <strong>choose</strong> to turn on downloading. Downloading is off by default; if you only use one currency, Sparios never goes online.",
+"If you turn it on, Sparios downloads the European Central Bank’s public daily reference-rate table at most once a day. No data is sent with this request: no account, no device identifier and no spending or income information. As with any web request, your iPhone’s IP address reaches the bank’s server; Sparios doesn’t see or store this request. You can turn it off at any time in Settings › Currency and rates.",
 ]),
 ("Assistant", [
 "The Assistant understands your questions on your iPhone and calculates answers only from your own entries. On devices that support Apple Intelligence, Apple’s on-device language model may make the wording more natural. Your questions and its answers never leave your iPhone and are not sent to any cloud AI service. The Assistant cannot change or delete your expenses.",
@@ -144,16 +152,20 @@ CONTENT = {
 ],
 "de": [
 ("Kurz gesagt", [
-"Sparios verlangt kein Konto, verbindet sich mit keinem Server und erhebt, verkauft oder teilt keine Daten über dich. Deine Ausgaben, Kategorien, Ziele und Assistent-Chats werden ausschließlich im App-Ordner auf deinem iPhone gespeichert.",
+"Sparios verlangt kein Konto, hat keinen eigenen Server und erhebt, verkauft oder teilt keine Daten über dich. Deine Ausgaben, Einnahmen, dein Budget, deine Ziele und Assistent-Chats werden ausschließlich im App-Ordner auf deinem iPhone gespeichert. Einzige Ausnahme ist der Wechselkurs-Download, den du einschalten kannst (unten) – er sendet keine Daten.",
 "Die App enthält keine Werbung, keine Analyse-, Tracking- oder Absturzberichts-Tools. Deshalb lautet unser App-Store-Datenschutzetikett „Keine Daten erfasst“.",
 ]),
 ("Was auf deinem Gerät gespeichert wird", [
-"Ausgaben (Betrag, Währung, Händlername, Datum, optionale Kartenbezeichnung und Notiz), Kategorien und gelernte Kategorieregeln, Ausgabenziele, dein Feedback zu Einblicken, der Assistent-Verlauf und deine App-Einstellungen.",
+"Ausgaben (Betrag, Währung, Händlername, Datum, optionale Kartenbezeichnung und Notiz), Einnahmen, Fixkosten, Sparziele und Wechselkurse, Kategorien und gelernte Kategorieregeln, Ausgabenziele, dein Feedback zu Einblicken, der Assistent-Verlauf und deine App-Einstellungen.",
 "Ein lokales Diagnoseprotokoll hilft dir zu verstehen, warum eine Automation keinen Eintrag erzeugt hat. Es enthält nie Beträge, Händlernamen oder Kartendaten – nur, ob ein Feld angekommen ist. Es wird höchstens 7 Tage aufbewahrt und kann in den Einstellungen ausgeschaltet und gelöscht werden.",
 "Die Daten werden mit dem iOS-Datenschutz für Dateien gespeichert und von App-Backups (iCloud oder Computer) ausgeschlossen. Wenn du die App löschst, werden also auch deine Daten gelöscht.",
 ]),
 ("Apple-Pay-Automation", [
 "Sparios liest weder deinen Wallet-Verlauf noch dein Bankkonto. Einträge entstehen nur, wenn eine Automation, die du selbst in der Kurzbefehle-App eingerichtet hast, eine Zahlung an Sparios übergibt. Du bestimmst, welche Karten dazugehören.",
+]),
+("Wechselkurse", [
+"Dein Budget nutzt Wechselkurse, um Einnahmen und Ausgaben in anderen Währungen in deine Hauptwährung umzurechnen. Du kannst einen Kurs selbst eingeben oder den Download <strong>freiwillig</strong> einschalten. Der Download ist standardmäßig aus; nutzt du nur eine Währung, geht Sparios nie online.",
+"Schaltest du ihn ein, lädt Sparios höchstens einmal täglich die öffentliche Tabelle der Referenzkurse der Europäischen Zentralbank. Mit dieser Anfrage werden keine Daten gesendet: kein Konto, keine Gerätekennung, keine Ausgaben- oder Einnahmendaten. Wie bei jeder Webanfrage erreicht die IP-Adresse deines iPhones den Server der Bank; Sparios sieht und speichert diese Anfrage nicht. Du kannst ihn jederzeit unter Einstellungen › Währung und Kurse ausschalten.",
 ]),
 ("Assistent", [
 "Der Assistent versteht deine Fragen auf deinem iPhone und berechnet die Antworten nur aus deinen eigenen Einträgen. Auf Geräten mit Apple Intelligence kann Apples geräteinternes Sprachmodell die Formulierung natürlicher machen. Deine Fragen und die Antworten verlassen dein iPhone nicht und werden an keinen Cloud-KI-Dienst gesendet. Der Assistent kann deine Ausgaben weder ändern noch löschen.",
