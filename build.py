@@ -9,7 +9,7 @@ import os
 import shutil
 
 OUT = "docs"
-EMAIL = "tasarahmeteren@gmail.com"
+EMAIL = "spariosapp@gmail.com"
 UPDATED = {"tr": "19 Eylül 2026", "en": "19 September 2026", "de": "19. September 2026"}
 LANGS = ["tr", "en", "de"]
 PAGES = ["privacy", "terms", "support", "accessibility"]
