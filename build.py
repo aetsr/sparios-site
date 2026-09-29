@@ -91,7 +91,7 @@ CONTENT = {
 ("Bildirimler", [
 "Tüm bildirimler cihazında, uygulamanın kendisi tarafından oluşturulur. Push sunucusu, cihaz jetonu ya da uzak bildirim yoktur; hiçbir bildirim için verin cihazdan çıkmaz.",
 "Bildirim metni, yararlı olabilmesi için tutar, işletme adı ya da kategori içerebilir — örneğin kategori bekleyen bir kaydı doğrudan bildirimden işaretleyebilmen için. <strong>Kilit ekranında ne görüneceğini sen belirlersin:</strong> iOS Ayarlar › Bildirimler › Sparios › Önizlemeleri Göster tercihini “Kilitliyken değil” ya da “Asla” yaptığında Sparios kilit ekranında yalnız kısa bir yer tutucu gösterir (“Gözden geçirilecek kayıt var” gibi); tutar ve işletme adı görünmez.",
-"Bildirim izni kurulumun sonunda bir kez istenir ve istemezsen uygulama bildirim göndermez. Uygulama içi Ayarlar › Bildirimler’den dilediğin an kapatabilir, sessiz saatleri ve bildirim saatini görebilirsin.",
+"Bildirim izni kurulumun sonunda bir kez istenir ve istemezsen uygulama bildirim göndermez. Uygulama içi Ayarlar › Bildirimler’den dilediğin an kapatabilir ve bildirim saatini değiştirebilirsin. Gece 22:00–09:00 arası bildirim gelmez.",
 ]),
 ("Başka bir iPhone’a aktarma", [
 "Verilerini yeni iPhone’una taşımak istediğinde iki cihaz yerel ağ veya Bluetooth üzerinden, uçtan uca şifreli ve doğrudan birbirine bağlanır. Veriler hiçbir sunucudan geçmez. Bağlantıyı yalnızca yeni iPhone’da gösterilen 10 karakterlik kodu girerek başlatabilirsin; iki telefon da kodu bildiğini kanıtlamadan veri gitmez.",
@@ -132,7 +132,7 @@ CONTENT = {
 ("Notifications", [
 "All notifications are created on your device, by the app itself. There is no push server, no device token and no remote notification; no notification causes your data to leave the device.",
 "To be useful, a notification’s text may contain an amount, a merchant name or a category — for example so you can categorize a waiting entry straight from the notification. <strong>You decide what appears on the Lock Screen:</strong> set iOS Settings › Notifications › Sparios › Show Previews to “When Unlocked” or “Never” and Sparios shows only a short placeholder there (such as “You have entries to review”); no amount and no merchant name.",
-"Notification permission is asked once, at the end of setup, and the app sends nothing if you decline. You can turn notifications off at any time in the app’s Settings › Notifications, where you can also see the quiet hours and the delivery time.",
+"Notification permission is asked once, at the end of setup, and the app sends nothing if you decline. You can turn notifications off at any time in the app’s Settings › Notifications, and change the delivery time. Nothing is delivered between 22:00 and 09:00.",
 ]),
 ("Moving to another iPhone", [
 "When you move your data to a new iPhone, the two devices connect directly over the local network or Bluetooth with end-to-end encryption. Your data never passes through a server. A transfer only starts after you enter the 10-character code shown on the new iPhone, and no data moves until both phones have proven they know it.",
@@ -173,7 +173,7 @@ CONTENT = {
 ("Mitteilungen", [
 "Alle Mitteilungen werden auf deinem Gerät von der App selbst erzeugt. Es gibt keinen Push-Server, kein Gerätetoken und keine Remote-Mitteilungen; für keine Mitteilung verlassen deine Daten das Gerät.",
 "Damit eine Mitteilung nützlich ist, kann ihr Text einen Betrag, einen Händlernamen oder eine Kategorie enthalten – etwa damit du einen wartenden Eintrag direkt aus der Mitteilung heraus zuordnen kannst. <strong>Was auf dem Sperrbildschirm erscheint, bestimmst du:</strong> Stellst du in iOS Einstellungen › Mitteilungen › Sparios › Vorschau zeigen auf „Wenn entsperrt“ oder „Nie“, zeigt Sparios dort nur einen kurzen Platzhalter (etwa „Du hast Einträge zum Durchsehen“); weder Betrag noch Händlername.",
-"Die Mitteilungsberechtigung wird einmal am Ende der Einrichtung erfragt; lehnst du ab, sendet die App nichts. In den App-Einstellungen › Mitteilungen kannst du sie jederzeit abschalten und dort auch die Ruhezeiten und die Zustellzeit sehen.",
+"Die Mitteilungsberechtigung wird einmal am Ende der Einrichtung erfragt; lehnst du ab, sendet die App nichts. In den App-Einstellungen › Mitteilungen kannst du sie jederzeit abschalten und dort die Zustellzeit ändern. Zwischen 22:00 und 09:00 wird nichts zugestellt.",
 ]),
 ("Umzug auf ein anderes iPhone", [
 "Beim Übertragen deiner Daten auf ein neues iPhone verbinden sich beide Geräte direkt über das lokale Netzwerk oder Bluetooth, Ende-zu-Ende-verschlüsselt. Die Daten laufen über keinen Server. Die Übertragung startet erst, nachdem du den 10-stelligen Code vom neuen iPhone eingegeben hast; Daten fließen erst, wenn beide Geräte den Code nachgewiesen haben.",
@@ -291,7 +291,7 @@ CONTENT = {
 ]),
 ("Sparios bana ne zaman bildirim gönderir?", [
 "Sparios her gün açılan bir uygulama değil, o yüzden bildirimleri de seyrektir. Gönderilenler günde tek bir akşam penceresinde toplanır (varsayılan 20:30) ve 22:00–09:00 arasında hiçbir şey gelmez. Herhangi bir hafta içinde en fazla iki harcama içgörüsü gönderilir; hafta/ay kapanışları ve “kısayol kayıt göndermiyor” uyarısı bu sayının dışındadır.",
-"Ayarlar › Bildirimler’de tek bir seçim yaparsın: <strong>Sadece önemli olduğunda</strong>, <strong>Önemli + haftalık özet</strong> ya da <strong>Kapalı</strong>. Aynı ekranda sessiz saatleri görebilir ve bildirim saatini değiştirebilirsin.",
+"Ayarlar › Bildirimler’de tek bir seçim yaparsın: <strong>Sadece önemli olduğunda</strong>, <strong>Önemli + haftalık özet</strong> ya da <strong>Kapalı</strong>. Aynı ekranda bildirim saatini değiştirebilirsin; gece 22:00–09:00 arası bildirim gelmez.",
 "Bir kayıt kategori bekliyorsa bildirime uzun basıp kategoriyi doğrudan oradan seçebilirsin; uygulamayı açman gerekmez.",
 ]),
 ("Kilit ekranımda tutar ve işletme adı görünsün istemiyorum", [
@@ -331,7 +331,7 @@ CONTENT = {
 ]),
 ("When does Sparios send me notifications?", [
 "Sparios isn’t an app you open every day, so its notifications are sparse too. Whatever there is gets collected into one evening window a day (20:30 by default), and nothing arrives between 22:00 and 09:00. At most two spending insights are sent in any week; the week and month closings and the “the shortcut has stopped delivering entries” warning don’t count towards that.",
-"In Settings › Notifications you make one choice: <strong>Only when it matters</strong>, <strong>Important + weekly summary</strong>, or <strong>Off</strong>. The same screen shows the quiet hours and lets you change the delivery time.",
+"In Settings › Notifications you make one choice: <strong>Only when it matters</strong>, <strong>Important + weekly summary</strong>, or <strong>Off</strong>. The same screen lets you change the delivery time; nothing is delivered between 22:00 and 09:00.",
 "If an entry is waiting for a category, long-press the notification and pick the category right there — no need to open the app.",
 ]),
 ("I don’t want amounts and merchant names on my Lock Screen", [
@@ -371,7 +371,7 @@ CONTENT = {
 ]),
 ("Wann schickt mir Sparios Mitteilungen?", [
 "Sparios ist keine App, die man täglich öffnet – entsprechend selten sind auch die Mitteilungen. Was anfällt, wird in einem Abendfenster pro Tag gebündelt (standardmäßig 20:30), und zwischen 22:00 und 09:00 kommt nichts. Pro Woche werden höchstens zwei Ausgaben-Einblicke gesendet; die Wochen- und Monatsabschlüsse und die Warnung „der Kurzbefehl liefert keine Einträge mehr“ zählen nicht dazu.",
-"Unter Einstellungen › Mitteilungen triffst du eine einzige Wahl: <strong>Nur wenn es wichtig ist</strong>, <strong>Wichtiges + Wochenübersicht</strong> oder <strong>Aus</strong>. Auf demselben Bildschirm siehst du die Ruhezeiten und kannst die Zustellzeit ändern.",
+"Unter Einstellungen › Mitteilungen triffst du eine einzige Wahl: <strong>Nur wenn es wichtig ist</strong>, <strong>Wichtiges + Wochenübersicht</strong> oder <strong>Aus</strong>. Auf demselben Bildschirm änderst du die Zustellzeit; zwischen 22:00 und 09:00 wird nichts zugestellt.",
 "Wartet ein Eintrag auf eine Kategorie, drückst du lange auf die Mitteilung und wählst die Kategorie direkt dort – die App musst du dafür nicht öffnen.",
 ]),
 ("Ich möchte keine Beträge und Händlernamen auf meinem Sperrbildschirm", [
