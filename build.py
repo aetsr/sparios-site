@@ -194,6 +194,13 @@ CONTENT = {
 ("Verilerini silmek", [
 "Ayarlar › Veri yönetimi › <strong>Tüm verilerimi sil</strong> harcamaları, kuralları, hedefleri, sohbetleri ve planlanmış bildirimleri kalıcı olarak siler. Uygulamayı silmek de tüm verileri kaldırır.",
 ]),
+("Şifreli yedek", [
+"Ayarlar › Veri yönetimi › Yedek ile bir yedek dosyası oluşturabilirsin. Dosya, seçtiğin şifreyle cihazında şifrelenir ve senin seçtiğin yere kaydedilir (ör. iCloud Drive). Bize gönderilmez; şifren olmadan biz de açamayız. Şifreni unutursan yedek açılamaz.",
+]),
+("Bu web sitesi", [
+"Bu site GitHub Pages’te barındırılır. Bir sayfayı açtığında GitHub, sayfayı sunmak ve güvenliği sağlamak için IP adresini ve teknik istek bilgilerini işler. Sitede çerez, analiz ya da takip yok; bu kayıtlar bize ulaşmaz. Hukuki dayanak: siteyi sunmaktaki meşru menfaat (GDPR md. 6/1-f). Ayrıntılar: <a href=\"https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement\">GitHub gizlilik bildirimi</a>.",
+"Bize e-posta yazarsan adresini ve mesajını yalnızca sana cevap vermek için kullanırız.",
+]),
 ("Çocuklar", [
 "Sparios çocuklardan bilerek veri toplamaz; zaten kimseden veri toplamaz.",
 ]),
@@ -231,6 +238,13 @@ CONTENT = {
 ]),
 ("Deleting your data", [
 "Settings › Data management › <strong>Delete all my data</strong> permanently removes expenses, rules, goals, chats and scheduled notifications. Deleting the app removes all data as well.",
+]),
+("Encrypted backup", [
+"In Settings › Data management › Backup you can create a backup file. It is encrypted on your device with a password you choose and saved where you choose (for example iCloud Drive). It is never sent to us, and without your password we can’t open it either. If you forget the password, the backup can’t be opened.",
+]),
+("This website", [
+"This website is hosted on GitHub Pages. When you open a page, GitHub processes your IP address and technical request data to deliver the page and keep the service secure. There are no cookies, analytics or tracking on this site, and we don’t receive these logs. Legal basis: our legitimate interest in providing the website (Art. 6(1)(f) GDPR). Details: <a href=\"https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement\">GitHub’s privacy statement</a>.",
+"If you email us, we use your address and message only to answer you.",
 ]),
 ("Children", [
 "Sparios does not knowingly collect data from children — it doesn’t collect data from anyone.",
@@ -270,6 +284,13 @@ CONTENT = {
 ("Daten löschen", [
 "Einstellungen › Datenverwaltung › <strong>Alle meine Daten löschen</strong> entfernt Ausgaben, Regeln, Ziele, Chats und geplante Mitteilungen dauerhaft. Auch das Löschen der App entfernt alle Daten.",
 ]),
+("Verschlüsseltes Backup", [
+"Unter Einstellungen › Datenverwaltung › Backup kannst du eine Backup-Datei erstellen. Sie wird auf deinem Gerät mit einem Passwort deiner Wahl verschlüsselt und dort gespeichert, wo du es festlegst (z. B. iCloud Drive). Sie wird nie an uns gesendet; ohne dein Passwort können auch wir sie nicht öffnen. Vergisst du das Passwort, lässt sich das Backup nicht öffnen.",
+]),
+("Diese Website", [
+"Diese Website wird bei GitHub Pages gehostet. Beim Aufruf einer Seite verarbeitet GitHub deine IP-Adresse und technische Anfragedaten, um die Seite auszuliefern und den Dienst zu sichern. Auf dieser Website gibt es keine Cookies, keine Analyse und kein Tracking, und diese Protokolle erreichen uns nicht. Rechtsgrundlage: unser berechtigtes Interesse an der Bereitstellung der Website (Art. 6 Abs. 1 lit. f DSGVO). Details: <a href=\"https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement\">Datenschutzerklärung von GitHub</a>.",
+"Wenn du uns eine E-Mail schreibst, verwenden wir deine Adresse und Nachricht nur, um dir zu antworten.",
+]),
 ("Kinder", [
 "Sparios erhebt wissentlich keine Daten von Kindern – und auch von niemandem sonst.",
 ]),
@@ -287,7 +308,7 @@ CONTENT = {
 "Tahminler, içgörüler ve Asistan yanıtları yalnızca kendi kayıtlarından hesaplanan tahminlerdir. Eksik veya hatalı kayıtlar sonuçları etkiler. Sparios yatırım, vergi veya finansal danışmanlık sunmaz.",
 ]),
 ("Verilerin", [
-"Veriler yalnızca cihazında tutulur ve uygulama yedeğine dahil edilmez. iPhone değiştirirken uygulamadaki aktarma özelliğini kullan; cihaz kaybında veya uygulama silindiğinde verileri geri getiremeyiz.",
+"Veriler yalnızca cihazında tutulur ve uygulama yedeğine dahil edilmez. iPhone değiştirirken uygulamadaki aktarmayı kullan ya da kendi şifreli yedeğini al (Ayarlar › Veri yönetimi › Yedek). Yedeğin yoksa, cihaz kaybında veya uygulama silindiğinde verileri geri getiremeyiz.",
 ]),
 ("Sorumluluk", [
 "Uygulama “olduğu gibi” sunulur. Yasaların izin verdiği ölçüde, uygulamanın kullanımından doğan dolaylı zararlardan sorumlu değiliz. Tüketici olarak yasal haklarını etkilemez.",
@@ -304,7 +325,7 @@ CONTENT = {
 "Forecasts, insights and Assistant answers are estimates calculated only from your own records. Missing or incorrect records affect the results. Sparios does not provide investment, tax or financial advice.",
 ]),
 ("Your data", [
-"Your data is kept only on your device and is excluded from app backups. Use the in-app transfer when you switch iPhones; if a device is lost or the app is deleted, we cannot recover your data.",
+"Your data is kept only on your device and is excluded from app backups. Use the in-app transfer when you switch iPhones, or keep your own encrypted backup (Settings › Data management › Backup). Without one, if a device is lost or the app is deleted, we cannot recover your data.",
 ]),
 ("Liability", [
 "The app is provided “as is”. To the extent permitted by law, we are not liable for indirect damages arising from its use. This does not affect your statutory rights as a consumer.",
@@ -321,7 +342,7 @@ CONTENT = {
 "Prognosen, Einblicke und Antworten des Assistenten sind Schätzungen, die nur aus deinen eigenen Einträgen berechnet werden. Fehlende oder falsche Einträge beeinflussen die Ergebnisse. Sparios bietet keine Anlage-, Steuer- oder Finanzberatung.",
 ]),
 ("Deine Daten", [
-"Deine Daten liegen nur auf deinem Gerät und sind von App-Backups ausgeschlossen. Nutze beim iPhone-Wechsel die Übertragung in der App; bei Verlust des Geräts oder Löschen der App können wir deine Daten nicht wiederherstellen.",
+"Deine Daten liegen nur auf deinem Gerät und sind von App-Backups ausgeschlossen. Nutze beim iPhone-Wechsel die Übertragung in der App oder leg dir ein eigenes verschlüsseltes Backup an (Einstellungen › Datenverwaltung › Backup). Ohne Backup können wir deine Daten bei Verlust des Geräts oder Löschen der App nicht wiederherstellen.",
 ]),
 ("Haftung", [
 "Die App wird „wie besehen“ bereitgestellt. Soweit gesetzlich zulässig, haften wir nicht für mittelbare Schäden aus ihrer Nutzung. Deine gesetzlichen Verbraucherrechte bleiben unberührt.",
@@ -631,7 +652,7 @@ def build():
     for lang in LANGS:
         ui = UI[lang]
         h = HOME[lang]
-        apple = '<svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M16.4 12.6c0-2.3 1.9-3.4 2-3.5-1.1-1.6-2.8-1.8-3.4-1.8-1.4-.1-2.8.9-3.5.9-.7 0-1.8-.8-3-.8-1.5 0-3 .9-3.8 2.3-1.6 2.8-.4 7 1.2 9.3.8 1.1 1.7 2.4 2.9 2.3 1.2 0 1.6-.7 3-.7s1.8.7 3 .7c1.3 0 2.1-1.1 2.8-2.3.9-1.3 1.3-2.6 1.3-2.6s-2.5-1-2.5-3.8zM14.2 5.8c.6-.8 1.1-1.9 1-3-1 0-2.1.7-2.8 1.5-.6.7-1.1 1.8-1 2.9 1.1.1 2.1-.6 2.8-1.4z"/></svg>'
+        apple = ""
         def button(extra=""):
             return (f'<a class="pill{extra}" href="{APP_STORE_URL}">{apple}{h["get"]}</a>' if APP_STORE_URL
                     else f'<span class="pill soon{extra}">{apple}{h["soon"]}</span>')
