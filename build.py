@@ -66,6 +66,72 @@ SUMMARY = {
 }
 
 # Page bodies: list of (heading, [paragraph html, ...]). Inline <strong>/<a> allowed.
+# Set once the app is live: the App Store link the home page's button points to.
+APP_STORE_URL = None
+
+HOME = {
+    "en": {
+        "title": "Sparios · A spending journal that fills itself in",
+        "hero": "Tap to pay.<br>Sparios writes it down.",
+        "sub": "A spending journal that fills itself in. Pay with any card in your Wallet and see what’s left this month. No bank login, no account, nothing leaves your iPhone.",
+        "soon": "Coming soon to the App Store", "get": "Free on the App Store",
+        "features": [
+            ("expenses", "Every payment, already written down", "Set up one Shortcuts automation and every Apple Pay payment lands in Sparios a moment later, with the shop and the amount. Rent, bills and cash go in the same list."),
+            ("budget", "Know what’s left", "Add your income once. Rent, subscriptions and loan payments are booked on their day, and Sparios shows what’s left this month and how much you can spend per day."),
+            ("compass", "See the month-end coming", "Compass reads your habits and shows where this month is heading. Every evening Sparios draws its own line. Spend less than that line and you win the month."),
+            ("assistant", "Ask about your money", "“How much did I spend on groceries this month?” The Assistant answers from your own entries, right on your iPhone."),
+            ("office", "A tiny office runs it all", "Five pixel colleagues live in Sparios. The courier brings in today’s receipts, the sorter files them, the navigator works out your month-end. Tap one to see what they’re up to."),
+        ],
+        "private": "Your money stays yours.",
+        "points": ["No account. No bank login.", "No tracking, no ads, no data collection.", "Online only for exchange rates, and only if you turn it on."],
+        "free": "Free. No subscription.",
+        "help": "Questions? The support page has answers, or write to us.",
+        "shot": "Sparios screen",
+    },
+    "tr": {
+        "title": "Sparios · Kendi kendine dolan harcama defteri",
+        "hero": "Öde.<br>Sparios not alsın.",
+        "sub": "Kendi kendine dolan bir harcama defteri. Wallet’taki hangi kartla ödersen öde, bu ay ne kaldığını gör. Banka girişi yok, hesap yok, hiçbir şey iPhone’undan çıkmaz.",
+        "soon": "Yakında App Store’da", "get": "App Store’da ücretsiz",
+        "features": [
+            ("expenses", "Her ödeme zaten yazılı", "Kestirmeler’de bir kez otomasyon kur; her Apple Pay ödemen işletmesi ve tutarıyla birkaç saniye içinde Sparios’a düşsün. Kira, fatura ve nakit de aynı listede."),
+            ("budget", "Ne kaldığını bil", "Gelirini bir kez ekle. Kira, abonelik ve taksitler günü gelince düşer; Sparios bu ay ne kaldığını ve günde ne kadar harcayabileceğini gösterir."),
+            ("compass", "Ay sonunu önceden gör", "Pusula alışkanlıklarına bakıp ayın nereye gittiğini gösterir. Sparios her akşam kendi çizgisini çizer. Onun altında kalırsan ayı sen kazanırsın."),
+            ("assistant", "Paranı sor", "“Bu ay markete ne kadar harcadım?” Asistan kendi kayıtlarından, iPhone’unda cevap verir."),
+            ("office", "Hepsini küçük bir ofis yürütür", "Sparios’ta beş piksel çalışan yaşar. Kurye bugünün fişlerini getirir, Ayıklayıcı dosyalar, Pusulacı ay sonunu hesaplar. Ne yaptıklarını görmek için birine dokun."),
+        ],
+        "private": "Paran sende kalır.",
+        "points": ["Hesap yok. Banka girişi yok.", "Takip yok, reklam yok, veri toplama yok.", "İnternete yalnız kur için çıkar, o da sen açarsan."],
+        "free": "Ücretsiz. Abonelik yok.",
+        "help": "Sorun mu var? Destek sayfasına bak ya da bize yaz.",
+        "shot": "Sparios ekranı",
+    },
+    "de": {
+        "title": "Sparios · Ein Ausgabenbuch, das sich selbst füllt",
+        "hero": "Bezahlen.<br>Sparios schreibt mit.",
+        "sub": "Ein Ausgabenbuch, das sich selbst füllt. Zahl mit jeder Karte aus deinem Wallet und sieh, was diesen Monat übrig ist. Kein Bank-Login, kein Konto, nichts verlässt dein iPhone.",
+        "soon": "Bald im App Store", "get": "Kostenlos im App Store",
+        "features": [
+            ("expenses", "Jede Zahlung, schon eingetragen", "Richte einmal eine Kurzbefehle-Automation ein, und jede Apple-Pay-Zahlung landet Sekunden später in Sparios, mit Händler und Betrag. Miete, Rechnungen und Bargeld stehen in derselben Liste."),
+            ("budget", "Wissen, was übrig ist", "Trag dein Einkommen einmal ein. Miete, Abos und Raten werden an ihrem Tag gebucht, und Sparios zeigt, was diesen Monat übrig ist und wie viel du pro Tag ausgeben kannst."),
+            ("compass", "Das Monatsende kommen sehen", "Der Kompass liest deine Gewohnheiten und zeigt, wohin dein Monat steuert. Jeden Abend zieht Sparios seine eigene Linie. Bleib darunter, und der Monat gehört dir."),
+            ("assistant", "Frag nach deinem Geld", "„Wie viel habe ich diesen Monat für Lebensmittel ausgegeben?“ Der Assistent antwortet aus deinen eigenen Einträgen, direkt auf dem iPhone."),
+            ("office", "Ein kleines Büro erledigt alles", "In Sparios arbeiten fünf Pixel-Kollegen. Der Kurier bringt die Belege des Tages, der Sortierer legt sie ab, der Navigator rechnet dein Monatsende. Tipp jemanden an und sieh, was gerade passiert."),
+        ],
+        "private": "Dein Geld bleibt bei dir.",
+        "points": ["Kein Konto. Kein Bank-Login.", "Kein Tracking, keine Werbung, keine Datenerhebung.", "Online nur für Wechselkurse, und nur wenn du es einschaltest."],
+        "free": "Kostenlos. Kein Abo.",
+        "help": "Fragen? Auf der Support-Seite gibt es Antworten, oder schreib uns.",
+        "shot": "Sparios-Bildschirm",
+    },
+}
+
+SUPPORT_UI = {
+    "tr": {"write": "Bize yaz", "faq": "Sık sorulanlar", "reply": "Genellikle birkaç gün içinde yanıt veririz. iPhone modelini, iOS ve Sparios sürümünü (Ayarlar › Hakkında) eklersen daha hızlı yardımcı olabiliriz."},
+    "en": {"write": "Write to us", "faq": "Common questions", "reply": "We usually reply within a few days. Adding your iPhone model, iOS version and Sparios version (Settings › About) helps us help you faster."},
+    "de": {"write": "Schreib uns", "faq": "Häufige Fragen", "reply": "Wir antworten meist innerhalb weniger Tage. Mit iPhone-Modell, iOS- und Sparios-Version (Einstellungen › Über) können wir schneller helfen."},
+}
+
 CONTENT = {
 "privacy": {
 "tr": [
@@ -381,38 +447,78 @@ CONTENT = {
 }
 
 CSS = """
-:root{--bg:#F8F6F0;--surface:#FFFEF9;--ink:#233D32;--muted:#646C62;--accent:#2F654E;--soft:#E9EEE0;--line:#E4E4D9}
-@media (prefers-color-scheme:dark){:root{--bg:#1B211E;--surface:#252D27;--ink:#EDF2E9;--muted:#ADB7AA;--accent:#A7D3B2;--soft:#2D3C2C;--line:#3C473C}}
+:root{--bg:#F8F6F0;--surface:#FFFEF9;--ink:#1F3A2E;--muted:#5E675D;--accent:#2F654E;--accent-ink:#FFFEF9;--soft:#E9EEE0;--line:#E2E3D7;--night:#14281F;--night-ink:#EAF2EA;--night-muted:#A9BFAE;--bezel:#121614}
+@media (prefers-color-scheme:dark){:root{--bg:#161C19;--surface:#202823;--ink:#EDF2E9;--muted:#A7B2A4;--accent:#A7D3B2;--accent-ink:#13261C;--soft:#26332A;--line:#34403A;--night:#0F1E17;--night-ink:#EAF2EA;--night-muted:#9FB6A4;--bezel:#000}}
 *{box-sizing:border-box}
-html{-webkit-text-size-adjust:100%}
-body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.65 -apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Arial,sans-serif;padding-inline:20px}
-.wrap{max-width:680px;margin:0 auto;padding-block:28px 56px}
-header{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;margin-bottom:36px}
-.brand{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font:500 20px/1 ui-serif,"New York",Georgia,serif}
-.mark{width:34px;height:34px;border-radius:10px;background:var(--accent);color:var(--bg);display:grid;place-items:center;font:600 18px/1 ui-serif,Georgia,serif}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Arial,sans-serif}
+.serif,h1,h2,h3,.brand{font-family:ui-serif,"New York",Georgia,serif;font-weight:500}
+.wrap{max-width:720px;margin:0 auto;padding:0 20px}
+.wide{max-width:1080px}
+header.top{display:flex;align-items:center;justify-content:space-between;gap:12px;flex-wrap:wrap;padding-block:22px}
+.brand{display:flex;align-items:center;gap:10px;color:var(--ink);text-decoration:none;font-size:21px}
+.brand img{width:34px;height:34px;border-radius:9px}
 nav.langs{display:flex;gap:4px;font-size:13px}
-nav.langs a{color:var(--muted);text-decoration:none;padding:5px 9px;border-radius:999px}
+nav.langs a{color:var(--muted);text-decoration:none;padding:5px 10px;border-radius:999px}
 nav.langs a[aria-current]{background:var(--soft);color:var(--accent);font-weight:600}
-h1{font:500 clamp(30px,6vw,40px)/1.15 ui-serif,"New York",Georgia,serif;margin:0 0 10px;text-wrap:balance}
+h1{font-size:clamp(32px,6vw,44px);line-height:1.12;margin:8px 0 12px;text-wrap:balance}
+h2{font-size:22px;line-height:1.3;margin:0 0 8px}
 .lede{color:var(--muted);font-size:18px;margin:0 0 8px}
-.updated{color:var(--muted);font-size:13px;letter-spacing:.02em;margin:0 0 32px}
-section{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:20px 22px;margin-bottom:14px}
-h2{font:500 21px/1.3 ui-serif,"New York",Georgia,serif;margin:0 0 8px}
+.updated{color:var(--muted);font-size:13px;letter-spacing:.02em;margin:0 0 28px}
+section.box{background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:20px 22px;margin-bottom:14px}
 p{margin:0 0 10px}p:last-child{margin-bottom:0}
 a{color:var(--accent);text-underline-offset:3px}
-a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
-.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:12px;margin-top:28px}
-.card{display:block;text-decoration:none;color:var(--ink);background:var(--surface);border:1px solid var(--line);border-radius:20px;padding:18px 20px}
-.card strong{display:block;font:500 19px/1.3 ui-serif,Georgia,serif;margin-bottom:4px}
-.card span{color:var(--muted);font-size:14px}
-.back{display:inline-block;margin-bottom:18px;font-size:14px;text-decoration:none}
-footer{margin-top:40px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-top:18px}
+a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:6px}
+.back{display:inline-block;margin:6px 0 14px;font-size:14px;text-decoration:none}
+/* Home */
+.hero{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:center;padding-block:28px 56px}
+.hero h1{font-size:clamp(40px,7vw,68px);line-height:1.02;letter-spacing:-.02em;margin:0 0 18px}
+.hero .sub{font-size:19px;color:var(--muted);max-width:30em;margin:0 0 26px}
+.pill{display:inline-flex;align-items:center;gap:8px;padding:12px 20px;border-radius:999px;background:var(--accent);color:var(--accent-ink);font-weight:600;text-decoration:none;font-size:16px}
+.pill.soon{background:var(--soft);color:var(--accent)}
+.phone{display:block;width:100%;height:auto;max-width:300px;margin:0 auto;border-radius:44px;border:9px solid var(--bezel);background:var(--bezel);box-shadow:0 30px 60px -20px rgba(20,40,30,.35)}
+.hero .phone{max-width:320px;transform:rotate(3deg)}
+.feature{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:center;padding-block:44px;border-top:1px solid var(--line)}
+.feature:nth-of-type(even) .copy{order:2}
+.feature h2{font-size:clamp(28px,4vw,38px);line-height:1.12;letter-spacing:-.01em;margin:0 0 12px}
+.feature p{font-size:18px;color:var(--muted);max-width:28em}
+.feature .phone{max-width:280px}
+.hero>*,.feature>*{min-width:0}
+h1,h2,p{overflow-wrap:break-word}
+.band{background:var(--night);color:var(--night-ink);border-radius:32px;padding:48px 40px;margin-block:40px}
+.band h2{font-size:clamp(30px,5vw,44px);line-height:1.1;margin:0 0 24px}
+.band ul{list-style:none;padding:0;margin:0;display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.band li{border-top:1px solid rgba(234,242,234,.18);padding-top:14px;color:var(--night-muted);font-size:17px}
+.closing{text-align:center;padding-block:24px 40px}
+.closing h2{font-size:clamp(28px,4vw,36px);margin-bottom:12px}
+.closing p{color:var(--muted)}
+/* Support */
+.contact{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;background:var(--night);color:var(--night-ink);border-radius:22px;padding:22px 24px;margin-bottom:28px}
+.contact h2{margin:0 0 4px}.contact p{color:var(--night-muted);margin:0}
+.contact .pill{background:var(--night-ink);color:var(--night)}
+details{background:var(--surface);border:1px solid var(--line);border-radius:16px;margin-bottom:10px}
+summary{cursor:pointer;list-style:none;padding:16px 48px 16px 20px;position:relative;font-family:ui-serif,"New York",Georgia,serif;font-size:19px;line-height:1.35}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:20px;top:14px;font:400 22px/1 -apple-system,sans-serif;color:var(--accent)}
+details[open] summary::after{content:"–"}
+details .a{padding:0 20px 18px}
+h3.faq{font-size:15px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted);font-family:-apple-system,sans-serif;font-weight:600;margin:0 0 12px}
+footer{margin-top:40px;color:var(--muted);font-size:13px;border-top:1px solid var(--line);padding-block:20px 40px}
 footer nav{display:flex;flex-wrap:wrap;gap:6px 16px;margin-bottom:10px}
 footer a{color:var(--muted)}
+@media (max-width:760px){
+.hero,.feature{grid-template-columns:1fr;gap:28px}
+.hero{padding-top:8px}
+.hero .phone{max-width:260px;transform:none}
+.feature:nth-of-type(even) .copy{order:0}
+.feature .phone{max-width:240px}
+.band{padding:32px 22px;border-radius:24px}
+.band ul{grid-template-columns:1fr}
+}
 """
 
 
-def page(lang, slug, title, body, description):
+def page(lang, slug, title, body, description, wide=False):
     ui = UI[lang]
     rel = "../" if slug else ""
     root = "../../" if slug else "../"
@@ -433,13 +539,18 @@ def page(lang, slug, title, body, description):
 <title>{html.escape(title)}</title>
 <meta name="description" content="{html.escape(description)}">
 <meta name="color-scheme" content="light dark">
+<meta property="og:title" content="{html.escape(title)}">
+<meta property="og:description" content="{html.escape(description)}">
+<meta property="og:image" content="https://aetsr.github.io/sparios-site/assets/icon-512.png">
+<link rel="icon" href="{root}assets/favicon.png">
+<link rel="apple-touch-icon" href="{root}assets/apple-touch-icon.png">
 {alternates}
 <link rel="stylesheet" href="{root}style.css">
 </head>
 <body>
-<div class="wrap">
-<header>
-<a class="brand" href="{rel or './'}"><span class="mark" aria-hidden="true">S</span>Sparios</a>
+<div class="wrap{' wide' if wide else ''}">
+<header class="top">
+<a class="brand" href="{rel or './'}"><img src="{root}assets/icon-192.png" alt="">Sparios</a>
 <nav class="langs" aria-label="{ui['lang']}">{langs}</nav>
 </header>
 <main>
@@ -464,20 +575,41 @@ def build():
     os.makedirs(OUT)
     open(os.path.join(OUT, "style.css"), "w").write(CSS.strip() + "\n")
     open(os.path.join(OUT, ".nojekyll"), "w").write("")
+    shutil.copytree("assets", os.path.join(OUT, "assets"))
     for lang in LANGS:
         ui = UI[lang]
-        cards = "".join(
-            f'<a class="card" href="{p}/"><strong>{ui[p]}</strong><span>{html.escape(SUMMARY[p][lang])}</span></a>'
-            for p in PAGES
+        h = HOME[lang]
+        button = (f'<a class="pill" href="{APP_STORE_URL}">{h["get"]}</a>' if APP_STORE_URL
+                  else f'<span class="pill soon">{h["soon"]}</span>')
+        def shot(key, eager=False):
+            return (f'<img class="phone" src="../assets/{lang}/{key}.jpg" width="640" height="1391" alt="{html.escape(h["shot"])}"'
+                    + ('' if eager else ' loading="lazy"') + '>')
+        features = "".join(
+            f'<section class="feature"><div class="copy"><h2>{html.escape(t)}</h2><p>{html.escape(d)}</p></div>{shot(k)}</section>'
+            for k, t, d in h["features"]
         )
-        home = f'<h1>Sparios</h1><p class="lede">{html.escape(ui["tagline"])}</p><p>{html.escape(ui["intro"])}</p><div class="cards">{cards}</div>'
+        points = "".join(f"<li>{html.escape(x)}</li>" for x in h["points"])
+        home = (f'<section class="hero"><div><h1>{h["hero"]}</h1><p class="sub">{html.escape(h["sub"])}</p>{button}</div>{shot("summary", True)}</section>'
+                f'{features}'
+                f'<section class="band"><h2>{html.escape(h["private"])}</h2><ul>{points}</ul></section>'
+                f'<section class="closing"><h2>{html.escape(h["free"])}</h2><p><a href="support/">{html.escape(h["help"])}</a></p></section>')
         os.makedirs(os.path.join(OUT, lang), exist_ok=True)
-        open(os.path.join(OUT, lang, "index.html"), "w").write(page(lang, "", "Sparios", home, ui["tagline"]))
+        open(os.path.join(OUT, lang, "index.html"), "w").write(page(lang, "", h["title"], home, h["sub"], wide=True))
         for slug in PAGES:
-            sections = "".join(
-                f"<section><h2>{html.escape(h)}</h2>" + "".join(f"<p>{fill(p)}</p>" for p in paras) + "</section>"
-                for h, paras in CONTENT[slug][lang]
-            )
+            if slug == "support":
+                su = SUPPORT_UI[lang]
+                questions = "".join(
+                    f"<details><summary>{html.escape(q)}</summary><div class=\"a\">" + "".join(f"<p>{fill(p)}</p>" for p in paras) + "</div></details>"
+                    for q, paras in CONTENT[slug][lang][1:]
+                )
+                sections = (f'<div class="contact"><div><h2>{su["write"]}</h2><p>{su["reply"]}</p></div>'
+                            f'<a class="pill" href="mailto:{EMAIL}">{EMAIL}</a></div>'
+                            f'<h3 class="faq">{su["faq"]}</h3>{questions}')
+            else:
+                sections = "".join(
+                    f'<section class="box"><h2>{html.escape(h)}</h2>' + "".join(f"<p>{fill(p)}</p>" for p in paras) + "</section>"
+                    for h, paras in CONTENT[slug][lang]
+                )
             body = (f'<a class="back" href="../">← {ui["home"]}</a><h1>{ui[slug]}</h1>'
                     f'<p class="lede">{html.escape(SUMMARY[slug][lang])}</p>'
                     f'<p class="updated">{ui["updated"]}: {UPDATED[lang]}</p>{sections}')
