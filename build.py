@@ -10,7 +10,7 @@ import shutil
 
 OUT = "docs"
 EMAIL = "spariosapp@gmail.com"
-UPDATED = {"tr": "19 Eylül 2026", "en": "19 September 2026", "de": "19. September 2026"}
+UPDATED = {"tr": "15 Ekim 2026", "en": "15 October 2026", "de": "15. Oktober 2026"}
 LANGS = ["tr", "en", "de"]
 PAGES = ["privacy", "terms", "support", "accessibility"]
 EULA = "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
@@ -49,14 +49,14 @@ SUMMARY = {
         "de": "Sparios erhebt keine personenbezogenen Daten. Alles bleibt auf deinem iPhone.",
     },
     "terms": {
-        "tr": "Uygulamayı ve Sparios Pro aboneliğini hangi koşullarla kullandığın.",
-        "en": "The terms for using the app and the Sparios Pro subscription.",
-        "de": "Die Bedingungen für die App und das Sparios-Pro-Abo.",
+        "tr": "Uygulamayı hangi koşullarla kullandığın.",
+        "en": "The terms for using the app.",
+        "de": "Die Bedingungen für die Nutzung der App.",
     },
     "support": {
-        "tr": "Otomasyon kurulumu, abonelik, cihaz değiştirme ve sık sorulanlar.",
-        "en": "Automation setup, subscription, switching iPhones and common questions.",
-        "de": "Automations-Einrichtung, Abo, iPhone-Wechsel und häufige Fragen.",
+        "tr": "Otomasyon kurulumu, cihaz değiştirme ve sık sorulanlar.",
+        "en": "Automation setup, switching iPhones and common questions.",
+        "de": "Automations-Einrichtung, iPhone-Wechsel und häufige Fragen.",
     },
     "accessibility": {
         "tr": "Sparios’u herkesin rahatça kullanabilmesi için neler yaptık.",
@@ -96,9 +96,6 @@ CONTENT = {
 ("Başka bir iPhone’a aktarma", [
 "Verilerini yeni iPhone’una taşımak istediğinde iki cihaz yerel ağ veya Bluetooth üzerinden, uçtan uca şifreli ve doğrudan birbirine bağlanır. Veriler hiçbir sunucudan geçmez. Bağlantıyı yalnızca yeni iPhone’da gösterilen 10 karakterlik kodu girerek başlatabilirsin; iki telefon da kodu bildiğini kanıtlamadan veri gitmez.",
 ]),
-("Satın almalar", [
-"Sparios Pro aboneliği tamamen Apple tarafından işlenir. Ödeme bilgilerin bize ulaşmaz; uygulama yalnızca Apple’dan aboneliğinin etkin olup olmadığını öğrenir.",
-]),
 ("Verilerini silmek", [
 "Ayarlar › Veri yönetimi › <strong>Tüm verilerimi sil</strong> harcamaları, kuralları, hedefleri, sohbetleri ve planlanmış bildirimleri kalıcı olarak siler. Uygulamayı silmek de tüm verileri kaldırır.",
 ]),
@@ -136,9 +133,6 @@ CONTENT = {
 ]),
 ("Moving to another iPhone", [
 "When you move your data to a new iPhone, the two devices connect directly over the local network or Bluetooth with end-to-end encryption. Your data never passes through a server. A transfer only starts after you enter the 10-character code shown on the new iPhone, and no data moves until both phones have proven they know it.",
-]),
-("Purchases", [
-"Sparios Pro subscriptions are processed entirely by Apple. Your payment details never reach us; the app only learns from Apple whether your subscription is active.",
 ]),
 ("Deleting your data", [
 "Settings › Data management › <strong>Delete all my data</strong> permanently removes expenses, rules, goals, chats and scheduled notifications. Deleting the app removes all data as well.",
@@ -178,9 +172,6 @@ CONTENT = {
 ("Umzug auf ein anderes iPhone", [
 "Beim Übertragen deiner Daten auf ein neues iPhone verbinden sich beide Geräte direkt über das lokale Netzwerk oder Bluetooth, Ende-zu-Ende-verschlüsselt. Die Daten laufen über keinen Server. Die Übertragung startet erst, nachdem du den 10-stelligen Code vom neuen iPhone eingegeben hast; Daten fließen erst, wenn beide Geräte den Code nachgewiesen haben.",
 ]),
-("Käufe", [
-"Das Sparios-Pro-Abo wird vollständig von Apple abgewickelt. Deine Zahlungsdaten erreichen uns nie; die App erfährt von Apple nur, ob dein Abo aktiv ist.",
-]),
 ("Daten löschen", [
 "Einstellungen › Datenverwaltung › <strong>Alle meine Daten löschen</strong> entfernt Ausgaben, Regeln, Ziele, Chats und geplante Mitteilungen dauerhaft. Auch das Löschen der App entfernt alle Daten.",
 ]),
@@ -196,11 +187,6 @@ CONTENT = {
 "tr": [
 ("Genel", [
 "Sparios’u App Store’dan indirerek <a href=\"{eula}\">Apple Standart Lisans Sözleşmesi (EULA)</a> kapsamında kullanırsın. Bu sayfa, o sözleşmeye ek olarak uygulamaya özgü birkaç noktayı açıklar.",
-]),
-("Sparios Pro aboneliği", [
-"Sparios’un temel özellikleri ücretsizdir. Sparios Pro; Asistan, Pusula ay sonu tahminleri ve senaryolar, “Sparios’u yen” yarışı, birikim hedefleri ve maaştan maaşa görünümü, haftanın hikâyesi, kalan bütçe dışındaki widget’lar ve akıllı bildirimleri açar. Aylık ve yıllık seçenekler vardır; güncel fiyatlar satın almadan önce uygulamada ve App Store’da gösterilir.",
-"Ödeme, satın alma onayıyla Apple Kimliği hesabından alınır. Abonelik, mevcut dönem bitmeden en az 24 saat önce iptal edilmezse aynı süre ve fiyatla otomatik olarak yenilenir. Aboneliğini iPhone’unda Ayarlar › [adın] › Abonelikler bölümünden yönetebilir veya iptal edebilirsin. İptal, mevcut dönemin sonunda geçerli olur.",
-"İade talepleri Apple tarafından değerlendirilir: <a href=\"https://reportaproblem.apple.com\">reportaproblem.apple.com</a>. İndirim ve teklif kodları App Store üzerinden kullanılır.",
 ]),
 ("Finansal tavsiye değildir", [
 "Tahminler, içgörüler ve Asistan yanıtları yalnızca kendi kayıtlarından hesaplanan tahminlerdir. Eksik veya hatalı kayıtlar sonuçları etkiler. Sparios yatırım, vergi veya finansal danışmanlık sunmaz.",
@@ -219,11 +205,6 @@ CONTENT = {
 ("General", [
 "When you download Sparios from the App Store you use it under the <a href=\"{eula}\">Apple Standard Licensed Application End User License Agreement (EULA)</a>. This page adds a few points specific to the app.",
 ]),
-("Sparios Pro subscription", [
-"Sparios’s core features are free. Sparios Pro unlocks the Assistant, Compass end-of-month forecasts and scenarios, the “Beat Sparios” race, savings goals and the payday-to-payday view, the weekly story, every widget except budget left, and smart notifications. Monthly and yearly options are available; current prices are shown in the app and on the App Store before you buy.",
-"Payment is charged to your Apple Account at confirmation of purchase. The subscription renews automatically for the same period and price unless cancelled at least 24 hours before the end of the current period. You can manage or cancel it on your iPhone in Settings › [your name] › Subscriptions. Cancellation takes effect at the end of the current period.",
-"Refunds are handled by Apple: <a href=\"https://reportaproblem.apple.com\">reportaproblem.apple.com</a>. Offer and discount codes are redeemed through the App Store.",
-]),
 ("Not financial advice", [
 "Forecasts, insights and Assistant answers are estimates calculated only from your own records. Missing or incorrect records affect the results. Sparios does not provide investment, tax or financial advice.",
 ]),
@@ -240,11 +221,6 @@ CONTENT = {
 "de": [
 ("Allgemeines", [
 "Wenn du Sparios aus dem App Store lädst, nutzt du die App gemäß der <a href=\"{eula}\">Apple-Standard-Endbenutzer-Lizenzvereinbarung (EULA)</a>. Diese Seite ergänzt einige App-spezifische Punkte.",
-]),
-("Sparios-Pro-Abo", [
-"Die Grundfunktionen von Sparios sind kostenlos. Sparios Pro schaltet den Assistenten, Kompass-Prognosen zum Monatsende und Szenarien, das Rennen „Sparios schlagen“, Sparziele und die Ansicht von Gehalt zu Gehalt, die Wochen-Story, alle Widgets außer dem Restbudget und intelligente Mitteilungen frei. Es gibt ein Monats- und ein Jahresabo; die aktuellen Preise werden vor dem Kauf in der App und im App Store angezeigt.",
-"Die Zahlung wird bei Kaufbestätigung über deinen Apple Account abgerechnet. Das Abo verlängert sich automatisch zum gleichen Zeitraum und Preis, sofern es nicht mindestens 24 Stunden vor Ende des laufenden Zeitraums gekündigt wird. Du kannst es auf deinem iPhone unter Einstellungen › [dein Name] › Abonnements verwalten oder kündigen. Die Kündigung wird zum Ende des laufenden Zeitraums wirksam.",
-"Erstattungen wickelt Apple ab: <a href=\"https://reportaproblem.apple.com\">reportaproblem.apple.com</a>. Angebots- und Rabattcodes werden über den App Store eingelöst.",
 ]),
 ("Keine Finanzberatung", [
 "Prognosen, Einblicke und Antworten des Assistenten sind Schätzungen, die nur aus deinen eigenen Einträgen berechnet werden. Fehlende oder falsche Einträge beeinflussen die Ergebnisse. Sparios bietet keine Anlage-, Steuer- oder Finanzberatung.",
@@ -270,24 +246,15 @@ CONTENT = {
 "<strong>1.</strong> Otomasyonda “Hemen çalıştır” kapalı. <strong>2.</strong> “Ne çalıştırılsın” ekranında “Yeni kestirme oluştur” yerine hazır “Harcama kaydet” kutucuğu seçilmiş; bu durumda tutar bağlanamaz. <strong>3.</strong> Tutar alanındaki “Kestirme Girdisi” balonuna dokunulup <em>Amount</em> seçilmemiş.",
 "Kartını Cüzdan’dan kaldırıp yeniden eklediysen otomasyondaki kart seçimini yenile. Rehberin altındaki “Son otomasyon çağrısı” kartı, otomasyonun gerçekten çalışıp çalışmadığını gösterir.",
 ]),
-("Aboneliğimi nasıl iptal ederim?", [
-"iPhone’unda Ayarlar › [adın] › Abonelikler › Sparios Pro. İptal ettiğinde Pro, mevcut dönem bitene kadar açık kalır. Verilerin hiçbir durumda silinmez.",
-]),
-("Yeni iPhone’a geçtim, Pro görünmüyor", [
-"Aynı Apple Kimliği ile giriş yaptığından emin ol, sonra Sparios’ta Ayarlar › Sparios Pro › <strong>Satın alımları geri yükle</strong>’ye dokun.",
-]),
-("İndirim kodumu nasıl kullanırım?", [
-"Sparios’ta Ayarlar › Sparios Pro › <strong>İndirim kodu kullan</strong>’a dokun ve kodu Apple’ın açtığı ekrana gir. Kodlar App Store uygulamasındaki hesap sayfandan da kullanılabilir.",
-]),
 ("Verilerimi yeni iPhone’a nasıl taşırım?", [
 "İki iPhone’u yan yana koy ve ikisinde de Sparios’u aç. Yeni iPhone’da kurulum sırasında “Eski iPhone’dan aktar”ı (ya da Ayarlar › Veri yönetimi › Cihaz aktarımı › “Bu yeni iPhone’um”) seç; ekranda 10 karakterlik bir kod çıkar. Eski iPhone’da Ayarlar › Veri yönetimi › <strong>Cihaz aktarımı</strong> › “Bu eski iPhone’um”a dokun, yeni cihazı seç ve kodu gir. Veriler iki cihaz arasında doğrudan ve şifreli aktarılır.",
 "Aktarımdan sonra yeni iPhone’da Apple Pay otomasyonunu yeniden kurman gerekir; Kestirmeler otomasyonları cihazlar arasında taşınmaz.",
 ]),
 ("Asistan hangi cihazlarda çalışır?", [
-"Asistan, Sparios’u çalıştıran her iPhone’da çalışır; cevaplar anında ve cihazında hesaplanır. Apple Intelligence destekleyen ve açık olan bir iPhone’da (iOS 26 veya sonrası) cevapların cümleleri ek olarak daha doğal hâle getirilir. Sparios Pro gerektirir.",
+"Asistan, Sparios’u çalıştıran her iPhone’da çalışır; cevaplar anında ve cihazında hesaplanır. Apple Intelligence destekleyen ve açık olan bir iPhone’da (iOS 26 veya sonrası) cevapların cümleleri ek olarak daha doğal hâle getirilir.",
 ]),
 ("Widget'ları nasıl eklerim?", [
-"Ana ekranda boş bir yere basılı tut, sol üstteki <strong>+</strong> düğmesine dokun ve listeden Sparios'u seç. Sekiz widget vardır: kalan bütçe (ücretsiz; ana ekranda ve kilit ekranında), ay sonu tahmini, “Sparios'u yen” yarışı, bu ayın kategori dağılımı, bu hafta, bütçe ve yaklaşan ödemeler, birikim hedefi ve kilit ekranı bütçe göstergesi. Kalan bütçe dışındakiler Sparios Pro gerektirir. Widget'lar uygulamanın hesapladığı değerleri gösterir; bir Apple Pay ödemesi kaydedildiğinde ve uygulamayı açtığında güncellenir.",
+"Ana ekranda boş bir yere basılı tut, sol üstteki <strong>+</strong> düğmesine dokun ve listeden Sparios'u seç. Sekiz widget vardır: kalan bütçe (ana ekranda ve kilit ekranında), ay sonu tahmini, “Sparios'u yen” yarışı, bu ayın kategori dağılımı, bu hafta, bütçe ve yaklaşan ödemeler, birikim hedefi ve kilit ekranı bütçe göstergesi. Widget'lar uygulamanın hesapladığı değerleri gösterir; bir Apple Pay ödemesi kaydedildiğinde ve uygulamayı açtığında güncellenir.",
 ]),
 ("Sparios bana ne zaman bildirim gönderir?", [
 "Sparios her gün açılan bir uygulama değil, o yüzden bildirimleri de seyrektir. Gönderilenler günde tek bir akşam penceresinde toplanır (varsayılan 20:30) ve 22:00–09:00 arasında hiçbir şey gelmez. Herhangi bir hafta içinde en fazla iki harcama içgörüsü gönderilir; hafta/ay kapanışları ve “kısayol kayıt göndermiyor” uyarısı bu sayının dışındadır.",
@@ -310,24 +277,15 @@ CONTENT = {
 "<strong>1.</strong> “Run Immediately” is off in the automation. <strong>2.</strong> On the “What should happen” screen the ready-made “Record expense” tile was picked instead of “Create New Shortcut”, so the amount can’t be connected. <strong>3.</strong> The “Shortcut Input” bubble in the Amount field wasn’t tapped to choose <em>Amount</em>.",
 "If you removed and re-added your card in Wallet, re-select it in the automation. The “Last automation call” card under the guide shows whether the automation actually ran.",
 ]),
-("How do I cancel my subscription?", [
-"On your iPhone go to Settings › [your name] › Subscriptions › Sparios Pro. After cancelling, Pro stays active until the current period ends. Your data is never deleted.",
-]),
-("I switched iPhones and Pro isn’t showing", [
-"Make sure you’re signed in with the same Apple Account, then in Sparios tap Settings › Sparios Pro › <strong>Restore Purchases</strong>.",
-]),
-("How do I redeem an offer code?", [
-"In Sparios tap Settings › Sparios Pro › <strong>Redeem code</strong> and enter the code on the screen Apple shows. You can also redeem codes from your account page in the App Store app.",
-]),
 ("How do I move my data to a new iPhone?", [
 "Place both iPhones next to each other and open Sparios on both. On the new iPhone, choose “Transfer from old iPhone” during setup (or Settings › Data management › Device transfer › “This is my new iPhone”); a 10-character code appears. On the old iPhone tap Settings › Data management › <strong>Device transfer</strong> › “This is my old iPhone”, pick the new device and enter the code. Your data moves directly and encrypted between the two devices.",
 "After the transfer, set up the Apple Pay automation again on the new iPhone — Shortcuts automations don’t move between devices.",
 ]),
 ("Which devices does the Assistant work on?", [
-"The Assistant works on every iPhone that runs Sparios; answers are calculated instantly on your device. On an iPhone with Apple Intelligence turned on (iOS 26 or later), the wording of answers is additionally made more natural. Requires Sparios Pro.",
+"The Assistant works on every iPhone that runs Sparios; answers are calculated instantly on your device. On an iPhone with Apple Intelligence turned on (iOS 26 or later), the wording of answers is additionally made more natural.",
 ]),
 ("How do I add the widgets?", [
-"Touch and hold an empty spot on your Home Screen, tap <strong>+</strong> in the top left and pick Sparios. There are eight widgets: budget left (free, on the Home Screen and the Lock Screen), month-end forecast, the “Beat Sparios” race, this month by category, this week, budget with upcoming payments, savings goal and a Lock Screen budget gauge. All except budget left require Sparios Pro. Widgets show the figures the app calculated; they refresh when an Apple Pay payment is recorded and when you open the app.",
+"Touch and hold an empty spot on your Home Screen, tap <strong>+</strong> in the top left and pick Sparios. There are eight widgets: budget left (on the Home Screen and the Lock Screen), month-end forecast, the “Beat Sparios” race, this month by category, this week, budget with upcoming payments, savings goal and a Lock Screen budget gauge. Widgets show the figures the app calculated; they refresh when an Apple Pay payment is recorded and when you open the app.",
 ]),
 ("When does Sparios send me notifications?", [
 "Sparios isn’t an app you open every day, so its notifications are sparse too. Whatever there is gets collected into one evening window a day (20:30 by default), and nothing arrives between 22:00 and 09:00. At most two spending insights are sent in any week; the week and month closings and the “the shortcut has stopped delivering entries” warning don’t count towards that.",
@@ -350,24 +308,15 @@ CONTENT = {
 "<strong>1.</strong> „Sofort ausführen“ ist in der Automation ausgeschaltet. <strong>2.</strong> Auf dem Bildschirm „Was soll ausgeführt werden“ wurde die fertige Kachel „Ausgabe erfassen“ statt „Neuen Kurzbefehl erstellen“ gewählt – dann lässt sich der Betrag nicht verbinden. <strong>3.</strong> Im Feld „Betrag“ wurde nicht auf die Blase „Kurzbefehleingabe“ getippt und <em>Amount</em> gewählt.",
 "Wenn du deine Karte aus Wallet entfernt und neu hinzugefügt hast, wähle sie in der Automation erneut aus. Die Karte „Letzter Automationsaufruf“ unter der Anleitung zeigt, ob die Automation wirklich gelaufen ist.",
 ]),
-("Wie kündige ich mein Abo?", [
-"Auf dem iPhone: Einstellungen › [dein Name] › Abonnements › Sparios Pro. Nach der Kündigung bleibt Pro bis zum Ende des laufenden Zeitraums aktiv. Deine Daten werden nie gelöscht.",
-]),
-("Neues iPhone – Pro wird nicht angezeigt", [
-"Stelle sicher, dass du mit demselben Apple Account angemeldet bist, und tippe in Sparios auf Einstellungen › Sparios Pro › <strong>Käufe wiederherstellen</strong>.",
-]),
-("Wie löse ich einen Angebotscode ein?", [
-"Tippe in Sparios auf Einstellungen › Sparios Pro › <strong>Code einlösen</strong> und gib den Code im Apple-Fenster ein. Codes lassen sich auch über deine Accountseite in der App-Store-App einlösen.",
-]),
 ("Wie übertrage ich meine Daten auf ein neues iPhone?", [
 "Lege beide iPhones nebeneinander und öffne auf beiden Sparios. Wähle auf dem neuen iPhone bei der Einrichtung „Vom alten iPhone übertragen“ (oder Einstellungen › Datenverwaltung › Geräteübertragung › „Das ist mein neues iPhone“); ein 10-stelliger Code erscheint. Tippe auf dem alten iPhone auf Einstellungen › Datenverwaltung › <strong>Geräteübertragung</strong> › „Das ist mein altes iPhone“, wähle das neue Gerät und gib den Code ein. Die Daten werden direkt und verschlüsselt zwischen beiden Geräten übertragen.",
 "Richte danach die Apple-Pay-Automation auf dem neuen iPhone neu ein – Kurzbefehle-Automationen werden nicht zwischen Geräten übertragen.",
 ]),
 ("Auf welchen Geräten funktioniert der Assistent?", [
-"Der Assistent funktioniert auf jedem iPhone, auf dem Sparios läuft; Antworten werden sofort auf dem Gerät berechnet. Auf einem iPhone mit eingeschalteter Apple Intelligence (iOS 26 oder neuer) wird die Formulierung zusätzlich natürlicher. Erfordert Sparios Pro.",
+"Der Assistent funktioniert auf jedem iPhone, auf dem Sparios läuft; Antworten werden sofort auf dem Gerät berechnet. Auf einem iPhone mit eingeschalteter Apple Intelligence (iOS 26 oder neuer) wird die Formulierung zusätzlich natürlicher.",
 ]),
 ("Wie füge ich die Widgets hinzu?", [
-"Halte eine freie Stelle auf dem Home-Bildschirm gedrückt, tippe oben links auf <strong>+</strong> und wähle Sparios. Es gibt acht Widgets: Restbudget (kostenlos, auf dem Home-Bildschirm und dem Sperrbildschirm), Prognose zum Monatsende, das Rennen „Sparios schlagen“, dieser Monat nach Kategorien, diese Woche, Budget mit anstehenden Zahlungen, Sparziel und eine Budgetanzeige für den Sperrbildschirm. Alle außer dem Restbudget setzen Sparios Pro voraus. Die Widgets zeigen die von der App berechneten Werte; sie aktualisieren sich, wenn eine Apple-Pay-Zahlung erfasst wird und wenn du die App öffnest.",
+"Halte eine freie Stelle auf dem Home-Bildschirm gedrückt, tippe oben links auf <strong>+</strong> und wähle Sparios. Es gibt acht Widgets: Restbudget (auf dem Home-Bildschirm und dem Sperrbildschirm), Prognose zum Monatsende, das Rennen „Sparios schlagen“, dieser Monat nach Kategorien, diese Woche, Budget mit anstehenden Zahlungen, Sparziel und eine Budgetanzeige für den Sperrbildschirm. Die Widgets zeigen die von der App berechneten Werte; sie aktualisieren sich, wenn eine Apple-Pay-Zahlung erfasst wird und wenn du die App öffnest.",
 ]),
 ("Wann schickt mir Sparios Mitteilungen?", [
 "Sparios ist keine App, die man täglich öffnet – entsprechend selten sind auch die Mitteilungen. Was anfällt, wird in einem Abendfenster pro Tag gebündelt (standardmäßig 20:30), und zwischen 22:00 und 09:00 kommt nichts. Pro Woche werden höchstens zwei Ausgaben-Einblicke gesendet; die Wochen- und Monatsabschlüsse und die Warnung „der Kurzbefehl liefert keine Einträge mehr“ zählen nicht dazu.",
