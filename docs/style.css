@@ -61,6 +61,9 @@ body.home{background:var(--bg)}
 .closing .pill{background:var(--accent);color:var(--accent-ink)}
 .closing .pill.soon{background:var(--soft);color:var(--accent);border:0}
 .closing p{margin-top:16px}
+.coffee{display:inline-flex;align-items:center;gap:6px;padding:10px 16px;border-radius:999px;background:var(--soft);color:var(--accent);text-decoration:none;font-weight:600;font-size:15px}
+.coffee:hover{filter:brightness(.97)}
+.coffee-line{margin:-12px 0 28px}
 /* Support */
 .contact{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;background:var(--night);color:var(--night-ink);border-radius:22px;padding:22px 24px;margin-bottom:28px}
 .contact h2{margin:0 0 4px}.contact p{color:var(--night-muted);margin:0}

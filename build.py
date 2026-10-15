@@ -68,6 +68,8 @@ SUMMARY = {
 # Page bodies: list of (heading, [paragraph html, ...]). Inline <strong>/<a> allowed.
 # Set once the app is live: the App Store link the home page's button points to.
 APP_STORE_URL = None
+# A plain link only: no Buy Me a Coffee widget script, so the site stays free of third-party code.
+COFFEE_URL = "https://www.buymeacoffee.com/sparios"
 
 HOME = {
     "en": {
@@ -90,6 +92,7 @@ HOME = {
         "points": ["No account. No bank login.", "No tracking, no ads, no data collection.", "Online only for exchange rates, and only if you turn it on."],
         "free": "Free. No subscription.",
         "help": "Questions? See support",
+        "coffee": "Enjoying Sparios? Buy me a coffee",
         "shot": "Sparios on iPhone",
     },
     "tr": {
@@ -112,6 +115,7 @@ HOME = {
         "points": ["Hesap yok. Banka girişi yok.", "Takip yok, reklam yok, veri toplama yok.", "İnternete yalnız kur için çıkar, o da sen açarsan."],
         "free": "Ücretsiz. Abonelik yok.",
         "help": "Sorun mu var? Destek sayfası",
+        "coffee": "Sparios işine yaradıysa bir kahve ısmarla",
         "shot": "iPhone’da Sparios",
     },
     "de": {
@@ -134,6 +138,7 @@ HOME = {
         "points": ["Kein Konto. Kein Bank-Login.", "Kein Tracking, keine Werbung, keine Datenerhebung.", "Online nur für Wechselkurse, und nur wenn du es einschaltest."],
         "free": "Kostenlos. Kein Abo.",
         "help": "Fragen? Zum Support",
+        "coffee": "Gefällt dir Sparios? Spendier mir einen Kaffee",
         "shot": "Sparios auf dem iPhone",
     },
 }
@@ -156,9 +161,9 @@ def icon(name):
             f'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">{ICONS[name]}</svg>')
 
 SUPPORT_UI = {
-    "tr": {"write": "Bize yaz", "faq": "Sık sorulanlar", "reply": "Genellikle birkaç gün içinde yanıt veririz. iPhone modelini, iOS ve Sparios sürümünü (Ayarlar › Hakkında) eklersen daha hızlı yardımcı olabiliriz."},
-    "en": {"write": "Write to us", "faq": "Common questions", "reply": "We usually reply within a few days. Adding your iPhone model, iOS version and Sparios version (Settings › About) helps us help you faster."},
-    "de": {"write": "Schreib uns", "faq": "Häufige Fragen", "reply": "Wir antworten meist innerhalb weniger Tage. Mit iPhone-Modell, iOS- und Sparios-Version (Einstellungen › Über) können wir schneller helfen."},
+    "tr": {"coffee": "Sparios işine yaradıysa bir kahve ısmarlayabilirsin", "write": "Bize yaz", "faq": "Sık sorulanlar", "reply": "Genellikle birkaç gün içinde yanıt veririz. iPhone modelini, iOS ve Sparios sürümünü (Ayarlar › Hakkında) eklersen daha hızlı yardımcı olabiliriz."},
+    "en": {"coffee": "Enjoying Sparios? You can buy me a coffee", "write": "Write to us", "faq": "Common questions", "reply": "We usually reply within a few days. Adding your iPhone model, iOS version and Sparios version (Settings › About) helps us help you faster."},
+    "de": {"coffee": "Gefällt dir Sparios? Du kannst mir einen Kaffee spendieren", "write": "Schreib uns", "faq": "Häufige Fragen", "reply": "Wir antworten meist innerhalb weniger Tage. Mit iPhone-Modell, iOS- und Sparios-Version (Einstellungen › Über) können wir schneller helfen."},
 }
 
 CONTENT = {
@@ -198,6 +203,7 @@ CONTENT = {
 "Ayarlar › Veri yönetimi › Yedek ile bir yedek dosyası oluşturabilirsin. Dosya, seçtiğin şifreyle cihazında şifrelenir ve senin seçtiğin yere kaydedilir (ör. iCloud Drive). Bize gönderilmez; şifren olmadan biz de açamayız. Şifreni unutursan yedek açılamaz.",
 ]),
 ("Bu web sitesi", [
+"Kahve linkine tıklarsan Buy Me a Coffee’nin sitesine gidersin; orada onların gizlilik kuralları geçerli. Bu sitede onlara ait bir kod yok.",
 "Bu site GitHub Pages’te barındırılır. Bir sayfayı açtığında GitHub, sayfayı sunmak ve güvenliği sağlamak için IP adresini ve teknik istek bilgilerini işler. Sitede çerez, analiz ya da takip yok; bu kayıtlar bize ulaşmaz. Hukuki dayanak: siteyi sunmaktaki meşru menfaat (GDPR md. 6/1-f). Ayrıntılar: <a href=\"https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement\">GitHub gizlilik bildirimi</a>.",
 "Bize e-posta yazarsan adresini ve mesajını yalnızca sana cevap vermek için kullanırız.",
 ]),
@@ -243,6 +249,7 @@ CONTENT = {
 "In Settings › Data management › Backup you can create a backup file. It is encrypted on your device with a password you choose and saved where you choose (for example iCloud Drive). It is never sent to us, and without your password we can’t open it either. If you forget the password, the backup can’t be opened.",
 ]),
 ("This website", [
+"If you follow the coffee link, you go to Buy Me a Coffee’s website, where their privacy policy applies. This site contains none of their code.",
 "This website is hosted on GitHub Pages. When you open a page, GitHub processes your IP address and technical request data to deliver the page and keep the service secure. There are no cookies, analytics or tracking on this site, and we don’t receive these logs. Legal basis: our legitimate interest in providing the website (Art. 6(1)(f) GDPR). Details: <a href=\"https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement\">GitHub’s privacy statement</a>.",
 "If you email us, we use your address and message only to answer you.",
 ]),
@@ -288,6 +295,7 @@ CONTENT = {
 "Unter Einstellungen › Datenverwaltung › Backup kannst du eine Backup-Datei erstellen. Sie wird auf deinem Gerät mit einem Passwort deiner Wahl verschlüsselt und dort gespeichert, wo du es festlegst (z. B. iCloud Drive). Sie wird nie an uns gesendet; ohne dein Passwort können auch wir sie nicht öffnen. Vergisst du das Passwort, lässt sich das Backup nicht öffnen.",
 ]),
 ("Diese Website", [
+"Folgst du dem Kaffee-Link, gelangst du zu Buy Me a Coffee; dort gilt deren Datenschutzerklärung. Diese Website enthält keinen Code von ihnen.",
 "Diese Website wird bei GitHub Pages gehostet. Beim Aufruf einer Seite verarbeitet GitHub deine IP-Adresse und technische Anfragedaten, um die Seite auszuliefern und den Dienst zu sichern. Auf dieser Website gibt es keine Cookies, keine Analyse und kein Tracking, und diese Protokolle erreichen uns nicht. Rechtsgrundlage: unser berechtigtes Interesse an der Bereitstellung der Website (Art. 6 Abs. 1 lit. f DSGVO). Details: <a href=\"https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement\">Datenschutzerklärung von GitHub</a>.",
 "Wenn du uns eine E-Mail schreibst, verwenden wir deine Adresse und Nachricht nur, um dir zu antworten.",
 ]),
@@ -560,6 +568,9 @@ body.home{background:var(--bg)}
 .closing .pill{background:var(--accent);color:var(--accent-ink)}
 .closing .pill.soon{background:var(--soft);color:var(--accent);border:0}
 .closing p{margin-top:16px}
+.coffee{display:inline-flex;align-items:center;gap:6px;padding:10px 16px;border-radius:999px;background:var(--soft);color:var(--accent);text-decoration:none;font-weight:600;font-size:15px}
+.coffee:hover{filter:brightness(.97)}
+.coffee-line{margin:-12px 0 28px}
 /* Support */
 .contact{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;background:var(--night);color:var(--night-ink);border-radius:22px;padding:22px 24px;margin-bottom:28px}
 .contact h2{margin:0 0 4px}.contact p{color:var(--night-muted);margin:0}
@@ -673,7 +684,8 @@ def build():
         home = (f'<section class="gallery-wrap"><p class="eyebrow">Sparios</p><h2>{html.escape(h["gallery"])}</h2><div class="gallery">{shots}</div></section>'
                 f'<section class="cards-wrap"><h2>{html.escape(h["cards_title"])}</h2><div class="grid">{cards}</div></section>'
                 f'<section class="band"><div><div class="lockic">{icon("lock")}</div><h2>{html.escape(h["private"])}</h2></div><ul>{points}</ul></section>'
-                f'<section class="closing"><h2>{html.escape(h["free"])}</h2>{button()}<p><a href="support/">{html.escape(h["help"])} →</a></p></section>')
+                f'<section class="closing"><h2>{html.escape(h["free"])}</h2>{button()}<p><a href="support/">{html.escape(h["help"])} →</a></p>'
+                f'<p><a class="coffee" href="{COFFEE_URL}" rel="noopener">☕ {html.escape(h["coffee"])}</a></p></section>')
         os.makedirs(os.path.join(OUT, lang), exist_ok=True)
         open(os.path.join(OUT, lang, "index.html"), "w").write(page(lang, "", h["title"], home, h["sub"], stage=stage))
         for slug in PAGES:
@@ -685,6 +697,7 @@ def build():
                 )
                 sections = (f'<div class="contact"><div><h2>{su["write"]}</h2><p>{su["reply"]}</p></div>'
                             f'<a class="pill" href="mailto:{EMAIL}">{EMAIL}</a></div>'
+                            f'<p class="coffee-line"><a class="coffee" href="{COFFEE_URL}" rel="noopener">☕ {html.escape(su["coffee"])}</a></p>'
                             f'<h3 class="faq">{su["faq"]}</h3>{questions}')
             else:
                 sections = "".join(
