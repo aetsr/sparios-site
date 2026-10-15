@@ -93,6 +93,7 @@ HOME = {
         "free": "Free. No subscription.",
         "help": "Questions? See support",
         "coffee": "Enjoying Sparios? Buy me a coffee",
+        "coffee_short": "Buy me a coffee",
         "shot": "Sparios on iPhone",
     },
     "tr": {
@@ -116,6 +117,7 @@ HOME = {
         "free": "Ücretsiz. Abonelik yok.",
         "help": "Sorun mu var? Destek sayfası",
         "coffee": "Sparios işine yaradıysa bir kahve ısmarla",
+        "coffee_short": "Bir kahve ısmarla",
         "shot": "iPhone’da Sparios",
     },
     "de": {
@@ -139,6 +141,7 @@ HOME = {
         "free": "Kostenlos. Kein Abo.",
         "help": "Fragen? Zum Support",
         "coffee": "Gefällt dir Sparios? Spendier mir einen Kaffee",
+        "coffee_short": "Spendier mir einen Kaffee",
         "shot": "Sparios auf dem iPhone",
     },
 }
@@ -541,6 +544,9 @@ body.home{background:var(--bg)}
 .pill{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;background:#FAF8EE;color:#183428;font-weight:600;text-decoration:none;font-size:16px}
 .pill svg{width:18px;height:18px}
 .pill.soon{background:rgba(250,248,238,.12);color:#FAF8EE;border:1px solid rgba(250,248,238,.25)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.pill.coffee-hero{background:#FFDD00;color:#1b1b1b;border:0;box-shadow:0 10px 24px -12px rgba(255,221,0,.6)}
+.pill.coffee-hero:hover{filter:brightness(1.03)}
 .trust{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:22px;font-size:14px;color:rgba(250,248,238,.7);list-style:none;padding:0}
 .trust li::before{content:"✓";margin-right:6px;color:#B9DEC2}
 .hero .art{align-self:end;display:flex;justify-content:center}
@@ -669,7 +675,8 @@ def build():
                     else f'<span class="pill soon{extra}">{apple}{h["soon"]}</span>')
         trust = "".join(f"<li>{html.escape(t)}</li>" for t in h["trust"])
         stage = (f'<section class="hero"><div class="copy"><h1>{h["hero"]}</h1><p class="sub">{html.escape(h["sub"])}</p>'
-                 f'{button()}<ul class="trust">{trust}</ul></div>'
+                 f'<div class="ctas">{button()}<a class="pill coffee-hero" href="{COFFEE_URL}" rel="noopener">☕ {html.escape(h["coffee_short"])}</a></div>'
+                 f'<ul class="trust">{trust}</ul></div>'
                  f'<div class="art"><img src="../assets/{lang}/hero.webp" width="960" height="1144" alt="{html.escape(h["shot"])}"></div></section>')
         shots = "".join(
             f'<img src="../assets/{lang}/{g}.jpg" width="560" height="1217" loading="lazy" alt="{html.escape(h["shot"])}"'

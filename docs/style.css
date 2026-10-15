@@ -34,6 +34,9 @@ body.home{background:var(--bg)}
 .pill{display:inline-flex;align-items:center;gap:10px;padding:14px 22px;border-radius:999px;background:#FAF8EE;color:#183428;font-weight:600;text-decoration:none;font-size:16px}
 .pill svg{width:18px;height:18px}
 .pill.soon{background:rgba(250,248,238,.12);color:#FAF8EE;border:1px solid rgba(250,248,238,.25)}
+.ctas{display:flex;flex-wrap:wrap;gap:12px;align-items:center}
+.pill.coffee-hero{background:#FFDD00;color:#1b1b1b;border:0;box-shadow:0 10px 24px -12px rgba(255,221,0,.6)}
+.pill.coffee-hero:hover{filter:brightness(1.03)}
 .trust{display:flex;flex-wrap:wrap;gap:8px 18px;margin-top:22px;font-size:14px;color:rgba(250,248,238,.7);list-style:none;padding:0}
 .trust li::before{content:"✓";margin-right:6px;color:#B9DEC2}
 .hero .art{align-self:end;display:flex;justify-content:center}
