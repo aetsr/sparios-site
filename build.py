@@ -10,7 +10,7 @@ import shutil
 
 OUT = "docs"
 EMAIL = "spariosapp@gmail.com"
-UPDATED = {"tr": "15 Ekim 2026", "en": "15 October 2026", "de": "15. Oktober 2026"}
+UPDATED = {"tr": "16 Ekim 2026", "en": "16 October 2026", "de": "16. Oktober 2026"}
 LANGS = ["tr", "en", "de"]
 PAGES = ["privacy", "terms", "support", "accessibility"]
 EULA = "https://www.apple.com/legal/internet-services/itunes/dev/stdeula/"
@@ -54,7 +54,7 @@ SUMMARY = {
         "de": "Die Bedingungen für die Nutzung der App.",
     },
     "support": {
-        "tr": "Otomasyon kurulumu, cihaz değiştirme ve sık sorulanlar.",
+        "tr": "Apple Pay kurulumu, cihaz değiştirme ve sık sorulanlar.",
         "en": "Automation setup, switching iPhones and common questions.",
         "de": "Automations-Einrichtung, iPhone-Wechsel und häufige Fragen.",
     },
@@ -369,9 +369,9 @@ CONTENT = {
 "Bir sorun mu var, yoksa bir fikrin mi? <a href=\"mailto:{email}\">{email}</a> adresine yaz; genellikle birkaç gün içinde yanıt veririz. iPhone modelini, iOS sürümünü ve Sparios sürümünü (Ayarlar › Hakkında) eklersen daha hızlı yardımcı olabiliriz.",
 ]),
 ("Apple Pay ödemelerim otomatik kaydedilmiyor", [
-"Kurulumu Sparios’ta Ayarlar › Kurulum › Apple Pay otomasyonu rehberinden adım adım yapabilirsin. En sık üç neden:",
-"<strong>1.</strong> Otomasyonda “Hemen çalıştır” kapalı. <strong>2.</strong> “Ne çalıştırılsın” ekranında “Yeni kestirme oluştur” yerine hazır “Harcama kaydet” kutucuğu seçilmiş; bu durumda tutar bağlanamaz. <strong>3.</strong> Tutar alanındaki “Kestirme Girdisi” balonuna dokunulup <em>Amount</em> seçilmemiş.",
-"Kartını Cüzdan’dan kaldırıp yeniden eklediysen otomasyondaki kart seçimini yenile. Rehberin altındaki “Son otomasyon çağrısı” kartı, otomasyonun gerçekten çalışıp çalışmadığını gösterir.",
+"Kurulum Sparios’ta Ayarlar › Apple Pay otomasyonu’nda. Hazır kestirmeyi ekler, otomasyonu açarsın. Yalnız temassız Apple Pay ödemeleri kaydolur; online ve fiziksel kart ödemeleri sayılmaz.",
+"<strong>iOS 27:</strong> Kestirmeler › Otomasyon listesinde Sparios otomasyonunun anahtarı açık olsun; eklenince kapalı gelir. <strong>iOS 26 ve öncesi:</strong> otomasyonda ödediğin kartlar işaretli ve “Hemen Çalıştır” seçili olsun.",
+"Ayarlar › Apple Pay otomasyonu’ndaki “Son otomasyon çağrısı” otomasyonun Sparios’a ulaşıp ulaşmadığını gösterir. Hâlâ gelmiyorsa aynı sayfadaki “Elle kur”u dene.",
 ]),
 ("Verilerimi yeni iPhone’a nasıl taşırım?", [
 "İki iPhone’u yan yana koy ve ikisinde de Sparios’u aç. Yeni iPhone’da kurulum sırasında “Eski iPhone’dan aktar”ı (ya da Ayarlar › Veri yönetimi › Cihaz aktarımı › “Bu yeni iPhone’um”) seç; ekranda 10 karakterlik bir kod çıkar. Eski iPhone’da Ayarlar › Veri yönetimi › <strong>Cihaz aktarımı</strong> › “Bu eski iPhone’um”a dokun, yeni cihazı seç ve kodu gir. Veriler iki cihaz arasında doğrudan ve şifreli aktarılır.",
@@ -400,9 +400,9 @@ CONTENT = {
 "Found a problem or have an idea? Email <a href=\"mailto:{email}\">{email}</a> — we usually reply within a few days. Including your iPhone model, iOS version and Sparios version (Settings › About) helps us help you faster.",
 ]),
 ("My Apple Pay payments aren’t recorded automatically", [
-"Follow the step-by-step guide in Sparios under Settings › Setup › Apple Pay automation. The three most common causes:",
-"<strong>1.</strong> “Run Immediately” is off in the automation. <strong>2.</strong> On the “What should happen” screen the ready-made “Record expense” tile was picked instead of “Create New Shortcut”, so the amount can’t be connected. <strong>3.</strong> The “Shortcut Input” bubble in the Amount field wasn’t tapped to choose <em>Amount</em>.",
-"If you removed and re-added your card in Wallet, re-select it in the automation. The “Last automation call” card under the guide shows whether the automation actually ran.",
+"Setup lives in Sparios under Settings › Apple Pay automation: you add a ready-made shortcut and switch its automation on. Only contactless Apple Pay payments are recorded; online and physical-card payments are not.",
+"<strong>iOS 27:</strong> in Shortcuts › Automation, the Sparios automation must be switched on; it arrives switched off. <strong>iOS 26 and earlier:</strong> the cards you pay with must be ticked and “Run Immediately” chosen.",
+"“Last automation call” in Settings › Apple Pay automation shows whether the automation reached Sparios. If nothing arrives, try “Set it up by hand” on the same page.",
 ]),
 ("How do I move my data to a new iPhone?", [
 "Place both iPhones next to each other and open Sparios on both. On the new iPhone, choose “Transfer from old iPhone” during setup (or Settings › Data management › Device transfer › “This is my new iPhone”); a 10-character code appears. On the old iPhone tap Settings › Data management › <strong>Device transfer</strong> › “This is my old iPhone”, pick the new device and enter the code. Your data moves directly and encrypted between the two devices.",
@@ -431,9 +431,9 @@ CONTENT = {
 "Ein Problem oder eine Idee? Schreib an <a href=\"mailto:{email}\">{email}</a> – wir antworten meist innerhalb weniger Tage. Mit iPhone-Modell, iOS-Version und Sparios-Version (Einstellungen › Über) können wir schneller helfen.",
 ]),
 ("Meine Apple-Pay-Zahlungen werden nicht automatisch erfasst", [
-"Folge der Schritt-für-Schritt-Anleitung in Sparios unter Einstellungen › Einrichtung › Apple-Pay-Automation. Die drei häufigsten Ursachen:",
-"<strong>1.</strong> „Sofort ausführen“ ist in der Automation ausgeschaltet. <strong>2.</strong> Auf dem Bildschirm „Was soll ausgeführt werden“ wurde die fertige Kachel „Ausgabe erfassen“ statt „Neuen Kurzbefehl erstellen“ gewählt – dann lässt sich der Betrag nicht verbinden. <strong>3.</strong> Im Feld „Betrag“ wurde nicht auf die Blase „Kurzbefehleingabe“ getippt und <em>Amount</em> gewählt.",
-"Wenn du deine Karte aus Wallet entfernt und neu hinzugefügt hast, wähle sie in der Automation erneut aus. Die Karte „Letzter Automationsaufruf“ unter der Anleitung zeigt, ob die Automation wirklich gelaufen ist.",
+"Die Einrichtung findest du in Sparios unter Einstellungen › Apple-Pay-Automation: Du fügst einen fertigen Kurzbefehl hinzu und schaltest seine Automation ein. Erfasst werden nur kontaktlose Apple-Pay-Zahlungen, nicht Online- oder Kartenzahlungen.",
+"<strong>iOS 27:</strong> In Kurzbefehle › Automation muss die Sparios-Automation eingeschaltet sein; nach dem Hinzufügen ist sie aus. <strong>iOS 26 und älter:</strong> Deine Karten müssen angehakt und „Sofort ausführen“ gewählt sein.",
+"„Letzter Automationsaufruf“ unter Einstellungen › Apple-Pay-Automation zeigt, ob die Automation Sparios erreicht hat. Kommt weiter nichts an, probier auf derselben Seite „Selbst einrichten“.",
 ]),
 ("Wie übertrage ich meine Daten auf ein neues iPhone?", [
 "Lege beide iPhones nebeneinander und öffne auf beiden Sparios. Wähle auf dem neuen iPhone bei der Einrichtung „Vom alten iPhone übertragen“ (oder Einstellungen › Datenverwaltung › Geräteübertragung › „Das ist mein neues iPhone“); ein 10-stelliger Code erscheint. Tippe auf dem alten iPhone auf Einstellungen › Datenverwaltung › <strong>Geräteübertragung</strong> › „Das ist mein altes iPhone“, wähle das neue Gerät und gib den Code ein. Die Daten werden direkt und verschlüsselt zwischen beiden Geräten übertragen.",
