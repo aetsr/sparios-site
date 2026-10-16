@@ -44,7 +44,18 @@ body.home{background:var(--bg)}
 .eyebrow{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:0 0 10px}
 .gallery-wrap{padding-block:72px 24px}
 .gallery-wrap h2,.cards-wrap h2{font-size:clamp(28px,4vw,42px);line-height:1.1;letter-spacing:-.015em;margin:0 0 28px;max-width:20em}
-.gallery{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 20px 20px;margin-inline:-20px;scrollbar-width:none}
+body.home{overflow-x:clip}
+.gal-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:28px}
+.gal-head h2{margin:0!important}
+.gal-nav{display:flex;gap:8px;flex:none}
+.gal-nav button{width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:500 22px/1 -apple-system,sans-serif;cursor:pointer;display:grid;place-items:center;transition:opacity .2s,transform .15s}
+.gal-nav button:hover:not(:disabled){transform:scale(1.06)}
+.gal-nav button:disabled{opacity:.3;cursor:default}
+.gal-nav button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+/* Full-bleed strip: starts in line with the heading, runs to the window's edge, fades out there. */
+.gallery{--edge:max(20px,calc((100vw - 1080px)/2 + 20px));display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px var(--edge) 20px;scroll-padding-inline:var(--edge);margin-inline:calc(50% - 50vw);scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 72px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 72px),transparent)}
+.gallery.at-end{-webkit-mask-image:none;mask-image:none}
+@media (hover:none){.gal-nav{display:none}}
 .gallery::-webkit-scrollbar{display:none}
 .gallery img{flex:0 0 auto;width:240px;height:auto;border-radius:22px;scroll-snap-align:start;box-shadow:0 18px 40px -22px rgba(20,40,30,.45)}
 .gallery img.pair{border-radius:22px 0 0 22px}.gallery img.pair2{border-radius:0 22px 22px 0;margin-left:-16px}

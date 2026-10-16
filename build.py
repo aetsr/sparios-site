@@ -78,7 +78,7 @@ HOME = {
         "sub": "A spending journal that fills itself in. Pay with any card in your Wallet and see what’s left this month. No bank login, no account, nothing leaves your iPhone.",
         "soon": "Coming soon to the App Store", "get": "Free on the App Store",
         "trust": ["Free", "No account", "No tracking"],
-        "gallery": "A look inside",
+        "gallery": "A look inside", "prev": "Previous", "next": "Next",
         "cards_title": "Everything your month needs. Nothing it doesn’t.",
         "cards": [
             ("card", "Every payment, already written down", "Set up one Shortcuts automation and every Apple Pay payment lands in Sparios a moment later. Rent, bills and cash go in the same list."),
@@ -102,7 +102,7 @@ HOME = {
         "sub": "Kendi kendine dolan bir harcama defteri. Wallet’taki hangi kartla ödersen öde, bu ay ne kaldığını gör. Banka girişi yok, hesap yok, hiçbir şey iPhone’undan çıkmaz.",
         "soon": "Yakında App Store’da", "get": "App Store’da ücretsiz",
         "trust": ["Ücretsiz", "Hesap yok", "Takip yok"],
-        "gallery": "İçeriden bir bakış",
+        "gallery": "İçeriden bir bakış", "prev": "Önceki", "next": "Sonraki",
         "cards_title": "Ayın için gereken her şey. Fazlası değil.",
         "cards": [
             ("card", "Her ödeme zaten yazılı", "Kestirmeler’de bir kez otomasyon kur; her Apple Pay ödemen birkaç saniyede Sparios’a düşsün. Kira, fatura ve nakit de aynı listede."),
@@ -126,7 +126,7 @@ HOME = {
         "sub": "Ein Ausgabenbuch, das sich selbst füllt. Zahl mit jeder Karte aus deinem Wallet und sieh, was diesen Monat übrig ist. Kein Bank-Login, kein Konto, nichts verlässt dein iPhone.",
         "soon": "Bald im App Store", "get": "Kostenlos im App Store",
         "trust": ["Kostenlos", "Kein Konto", "Kein Tracking"],
-        "gallery": "Ein Blick hinein",
+        "gallery": "Ein Blick hinein", "prev": "Zurück", "next": "Weiter",
         "cards_title": "Alles, was dein Monat braucht. Nichts darüber hinaus.",
         "cards": [
             ("card", "Jede Zahlung, schon eingetragen", "Richte einmal eine Kurzbefehle-Automation ein, und jede Apple-Pay-Zahlung landet Sekunden später in Sparios. Miete, Rechnungen und Bargeld stehen in derselben Liste."),
@@ -554,7 +554,18 @@ body.home{background:var(--bg)}
 .eyebrow{font-size:13px;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--accent);margin:0 0 10px}
 .gallery-wrap{padding-block:72px 24px}
 .gallery-wrap h2,.cards-wrap h2{font-size:clamp(28px,4vw,42px);line-height:1.1;letter-spacing:-.015em;margin:0 0 28px;max-width:20em}
-.gallery{display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px 20px 20px;margin-inline:-20px;scrollbar-width:none}
+body.home{overflow-x:clip}
+.gal-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:28px}
+.gal-head h2{margin:0!important}
+.gal-nav{display:flex;gap:8px;flex:none}
+.gal-nav button{width:46px;height:46px;border-radius:50%;border:1px solid var(--line);background:var(--surface);color:var(--ink);font:500 22px/1 -apple-system,sans-serif;cursor:pointer;display:grid;place-items:center;transition:opacity .2s,transform .15s}
+.gal-nav button:hover:not(:disabled){transform:scale(1.06)}
+.gal-nav button:disabled{opacity:.3;cursor:default}
+.gal-nav button:focus-visible{outline:2px solid var(--accent);outline-offset:3px}
+/* Full-bleed strip: starts in line with the heading, runs to the window's edge, fades out there. */
+.gallery{--edge:max(20px,calc((100vw - 1080px)/2 + 20px));display:flex;gap:16px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px var(--edge) 20px;scroll-padding-inline:var(--edge);margin-inline:calc(50% - 50vw);scrollbar-width:none;-webkit-mask-image:linear-gradient(90deg,#000 calc(100% - 72px),transparent);mask-image:linear-gradient(90deg,#000 calc(100% - 72px),transparent)}
+.gallery.at-end{-webkit-mask-image:none;mask-image:none}
+@media (hover:none){.gal-nav{display:none}}
 .gallery::-webkit-scrollbar{display:none}
 .gallery img{flex:0 0 auto;width:240px;height:auto;border-radius:22px;scroll-snap-align:start;box-shadow:0 18px 40px -22px rgba(20,40,30,.45)}
 .gallery img.pair{border-radius:22px 0 0 22px}.gallery img.pair2{border-radius:0 22px 22px 0;margin-left:-16px}
@@ -688,7 +699,15 @@ def build():
             for k, t, d in h["cards"]
         )
         points = "".join(f"<li>{html.escape(x)}</li>" for x in h["points"])
-        home = (f'<section class="gallery-wrap"><p class="eyebrow">Sparios</p><h2>{html.escape(h["gallery"])}</h2><div class="gallery">{shots}</div></section>'
+        nav = (f'<div class="gal-nav"><button type="button" class="gal-prev" aria-label="{html.escape(h["prev"])}">‹</button>'
+               f'<button type="button" class="gal-next" aria-label="{html.escape(h["next"])}">›</button></div>')
+        # Own inline script, no third-party code: arrow buttons for mouse users, disabled at the ends.
+        gal_js = ("<script>(function(){var g=document.querySelector('.gallery'),p=document.querySelector('.gal-prev'),n=document.querySelector('.gal-next');"
+                  "if(!g||!p||!n)return;function s(){return Math.max(g.clientWidth*.8,260)}"
+                  "p.onclick=function(){g.scrollBy({left:-s(),behavior:'smooth'})};n.onclick=function(){g.scrollBy({left:s(),behavior:'smooth'})};"
+                  "function u(){var e=g.scrollLeft+g.clientWidth>=g.scrollWidth-4;p.disabled=g.scrollLeft<4;n.disabled=e;g.classList.toggle('at-end',e)}"
+                  "g.addEventListener('scroll',u,{passive:true});addEventListener('resize',u);u()})();</script>")
+        home = (f'<section class="gallery-wrap"><p class="eyebrow">Sparios</p><div class="gal-head"><h2>{html.escape(h["gallery"])}</h2>{nav}</div><div class="gallery" tabindex="0">{shots}</div>{gal_js}</section>'
                 f'<section class="cards-wrap"><h2>{html.escape(h["cards_title"])}</h2><div class="grid">{cards}</div></section>'
                 f'<section class="band"><div><div class="lockic">{icon("lock")}</div><h2>{html.escape(h["private"])}</h2></div><ul>{points}</ul></section>'
                 f'<section class="closing"><h2>{html.escape(h["free"])}</h2>{button()}<p><a href="support/">{html.escape(h["help"])} →</a></p>'
