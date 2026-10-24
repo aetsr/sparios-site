@@ -82,14 +82,14 @@ HOME = {
         "cards_title": "Everything your month needs. Nothing it doesn’t.",
         "cards": [
             ("card", "Every payment, already written down", "Set up one Shortcuts automation and every Apple Pay payment lands in Sparios a moment later. Rent, bills and cash go in the same list."),
-            ("wallet", "Know what’s left", "Add your income once. Rent and subscriptions are booked on their day, and you always see what’s left and your daily share."),
             ("compass", "See the month-end coming", "Compass shows where this month is heading. Each evening Sparios draws its own line. Stay under it and you win the month."),
-            ("chat", "Ask about your money", "“How much did I spend on groceries this month?” The Assistant answers from your own entries, on your iPhone."),
+            ("radar", "Your money’s rhythm", "The radar shows the days and hours you pay most. A mirror, not advice."),
             ("office", "A tiny office", "Five pixel colleagues bring in your receipts, file them and work out your month-end. Tap one to see what they’re up to."),
-            ("bell", "Quiet by design", "At most one notification a day, in the evening. Nothing at night. Pick a category right from the notification."),
+            ("chat", "Ask about your money", "“How much did I spend on groceries this month?” The Assistant answers from your own entries, on your iPhone."),
+            ("wallet", "Know what’s left", "Add your income once. Rent and subscriptions are booked on their day, and you always see what’s left and your daily share."),
         ],
         "private": "Your money stays yours.",
-        "points": ["No account. No bank login.", "No tracking, no ads, no data collection.", "Online only for exchange rates, and only if you turn it on."],
+        "points": ["No account. No bank login.", "No tracking, no ads, no data collection.", "Online only for exchange rates, and only if you turn it on.", "At most one notification a day, in the evening."],
         "free": "Free. No subscription.",
         "help": "Questions? See support",
         "coffee": "Enjoying Sparios? Buy me a coffee",
@@ -106,14 +106,14 @@ HOME = {
         "cards_title": "Ayın için gereken her şey. Fazlası değil.",
         "cards": [
             ("card", "Her ödeme zaten yazılı", "Kestirmeler’de bir kez otomasyon kur; her Apple Pay ödemen birkaç saniyede Sparios’a düşsün. Kira, fatura ve nakit de aynı listede."),
-            ("wallet", "Ne kaldığını bil", "Gelirini bir kez ekle. Kira ve abonelikler günü gelince düşer; ne kaldığını ve günlük payını hep görürsün."),
             ("compass", "Ay sonunu önceden gör", "Pusula ayın nereye gittiğini gösterir. Sparios her akşam kendi çizgisini çizer. Altında kalırsan ayı sen kazanırsın."),
-            ("chat", "Paranı sor", "“Bu ay markete ne kadar harcadım?” Asistan kendi kayıtlarından, iPhone’unda cevap verir."),
+            ("radar", "Paranın ritmi", "Radar en çok hangi gün ve saatte ödediğini gösterir. Ayna tutar, akıl vermez."),
             ("office", "Küçük bir ofis", "Beş piksel çalışan fişlerini getirir, dosyalar ve ay sonunu hesaplar. Ne yaptıklarını görmek için birine dokun."),
-            ("bell", "Sessiz tasarım", "Günde en fazla bir bildirim, akşam. Gece hiçbir şey yok. Kategoriyi bildirimden seçersin."),
+            ("chat", "Paranı sor", "“Bu ay markete ne kadar harcadım?” Asistan kendi kayıtlarından, iPhone’unda cevap verir."),
+            ("wallet", "Ne kaldığını bil", "Gelirini bir kez ekle. Kira ve abonelikler günü gelince düşer; ne kaldığını ve günlük payını hep görürsün."),
         ],
         "private": "Paran sende kalır.",
-        "points": ["Hesap yok. Banka girişi yok.", "Takip yok, reklam yok, veri toplama yok.", "İnternete yalnız kur için çıkar, o da sen açarsan."],
+        "points": ["Hesap yok. Banka girişi yok.", "Takip yok, reklam yok, veri toplama yok.", "İnternete yalnız kur için çıkar, o da sen açarsan.", "Günde en fazla bir bildirim, akşam."],
         "free": "Ücretsiz. Abonelik yok.",
         "help": "Sorun mu var? Destek sayfası",
         "coffee": "Sparios işine yaradıysa bir kahve ısmarla",
@@ -130,14 +130,14 @@ HOME = {
         "cards_title": "Alles, was dein Monat braucht. Nichts darüber hinaus.",
         "cards": [
             ("card", "Jede Zahlung, schon eingetragen", "Richte einmal eine Kurzbefehle-Automation ein, und jede Apple-Pay-Zahlung landet Sekunden später in Sparios. Miete, Rechnungen und Bargeld stehen in derselben Liste."),
-            ("wallet", "Wissen, was übrig ist", "Trag dein Einkommen einmal ein. Miete und Abos werden an ihrem Tag gebucht, und du siehst immer, was übrig ist."),
             ("compass", "Das Monatsende kommen sehen", "Der Kompass zeigt, wohin dein Monat steuert. Jeden Abend zieht Sparios seine eigene Linie. Bleib darunter, und der Monat gehört dir."),
-            ("chat", "Frag nach deinem Geld", "„Wie viel habe ich diesen Monat für Lebensmittel ausgegeben?“ Der Assistent antwortet aus deinen Einträgen, auf dem iPhone."),
+            ("radar", "Der Rhythmus deines Geldes", "Das Radar zeigt, an welchen Tagen und zu welchen Uhrzeiten du am meisten zahlst. Ein Spiegel, kein Ratschlag."),
             ("office", "Ein kleines Büro", "Fünf Pixel-Kollegen bringen deine Belege, legen sie ab und rechnen dein Monatsende. Tipp jemanden an und sieh, was gerade passiert."),
-            ("bell", "Ruhig gebaut", "Höchstens eine Mitteilung am Tag, abends. Nachts nichts. Die Kategorie wählst du direkt in der Mitteilung."),
+            ("chat", "Frag nach deinem Geld", "„Wie viel habe ich diesen Monat für Lebensmittel ausgegeben?“ Der Assistent antwortet aus deinen Einträgen, auf dem iPhone."),
+            ("wallet", "Wissen, was übrig ist", "Trag dein Einkommen einmal ein. Miete und Abos werden an ihrem Tag gebucht, und du siehst immer, was übrig ist."),
         ],
         "private": "Dein Geld bleibt bei dir.",
-        "points": ["Kein Konto. Kein Bank-Login.", "Kein Tracking, keine Werbung, keine Datenerhebung.", "Online nur für Wechselkurse, und nur wenn du es einschaltest."],
+        "points": ["Kein Konto. Kein Bank-Login.", "Kein Tracking, keine Werbung, keine Datenerhebung.", "Online nur für Wechselkurse, und nur wenn du es einschaltest.", "Höchstens eine Mitteilung am Tag, abends."],
         "free": "Kostenlos. Kein Abo.",
         "help": "Fragen? Zum Support",
         "coffee": "Gefällt dir Sparios? Spendier mir einen Kaffee",
@@ -146,12 +146,13 @@ HOME = {
     },
 }
 
-GALLERY = ["panorama-1", "panorama-2", "store-14-office", "store-09-radar", "store-12-assistant", "store-11-outlook", "store-04-race", "store-13-receipt"]
+GALLERY = ["01-capture", "02-forecast", "03-rhythm", "04-story", "05-office", "06-assistant", "07-budget", "08-privacy"]
 
 ICONS = {
     "card": '<rect x="3" y="5" width="18" height="14" rx="3"/><path d="M3 10h18M7 15h4"/>',
     "wallet": '<rect x="3" y="7" width="18" height="12" rx="3"/><path d="M6 7V6a1 1 0 0 1 1-1h10v2"/><circle cx="16.5" cy="13" r="1.2"/>',
     "compass": '<circle cx="12" cy="12" r="9"/><path d="M15.5 8.5l-2 5-5 2 2-5z"/>',
+    "radar": '<circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><path d="M12 12l6.4-6.4"/><circle cx="15" cy="9.5" r=".8"/>',
     "chat": '<path d="M5 5h14a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-8l-4 3v-3H5a2 2 0 0 1-2-2V7a2 2 0 0 1 2-2z"/>',
     "office": '<rect x="5" y="3" width="14" height="18" rx="1.5"/><path d="M9 7h2M13 7h2M9 11h2M13 11h2M10 21v-4h4v4"/>',
     "bell": '<path d="M6 16v-5a6 6 0 0 1 12 0v5l1.5 2h-15z"/><path d="M10 20a2 2 0 0 0 4 0"/>',
@@ -508,8 +509,7 @@ CONTENT = {
 }
 
 CSS = """
-:root{--bg:#F8F6F0;--surface:#FFFEF9;--ink:#1F3A2E;--muted:#5E675D;--accent:#2F654E;--accent-ink:#FFFEF9;--soft:#E9EEE0;--line:#E2E3D7;--night:#14281F;--night-ink:#EAF2EA;--night-muted:#A9BFAE;--bezel:#121614}
-@media (prefers-color-scheme:dark){:root{--bg:#161C19;--surface:#202823;--ink:#EDF2E9;--muted:#A7B2A4;--accent:#A7D3B2;--accent-ink:#13261C;--soft:#26332A;--line:#34403A;--night:#0F1E17;--night-ink:#EAF2EA;--night-muted:#9FB6A4;--bezel:#000}}
+:root{color-scheme:dark;--bg:#101B16;--surface:#1A2720;--ink:#EDF2E9;--muted:#A9B9AE;--accent:#A7D3B2;--accent-ink:#13261C;--soft:#23362B;--line:#2D4035;--night:#0E1C16;--night-ink:#EAF2EA;--night-muted:#9FB6A4;--bezel:#000}
 *{box-sizing:border-box}
 html{-webkit-text-size-adjust:100%;scroll-behavior:smooth}
 body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 -apple-system,BlinkMacSystemFont,"SF Pro Text","Helvetica Neue",Arial,sans-serif}
@@ -533,7 +533,7 @@ a:focus-visible,summary:focus-visible{outline:2px solid var(--accent);outline-of
 .back{display:inline-block;margin:6px 0 14px;font-size:14px;text-decoration:none}
 /* Home */
 body.home{background:var(--bg)}
-.stage{background:linear-gradient(100deg,#183428 0%,#22463a 45%,#36624a 100%);color:#FAF8EE;border-radius:0 0 40px 40px;overflow:hidden}
+.stage{background:radial-gradient(120% 90% at 70% 40%,#1F4232 0%,#162E23 45%,#0E1C16 100%);color:#FAF8EE;border-radius:0 0 40px 40px;overflow:hidden}
 .stage header.top .brand{color:#FAF8EE}
 .stage nav.langs a{color:rgba(250,248,238,.7)}
 .stage nav.langs a[aria-current]{background:rgba(250,248,238,.14);color:#FAF8EE}
@@ -567,15 +567,14 @@ body.home{overflow-x:clip}
 .gallery.at-end{-webkit-mask-image:none;mask-image:none}
 @media (hover:none){.gal-nav{display:none}}
 .gallery::-webkit-scrollbar{display:none}
-.gallery img{flex:0 0 auto;width:240px;height:auto;border-radius:22px;scroll-snap-align:start;box-shadow:0 18px 40px -22px rgba(20,40,30,.45)}
-.gallery img.pair{border-radius:22px 0 0 22px}.gallery img.pair2{border-radius:0 22px 22px 0;margin-left:-16px}
+.gallery img{flex:0 0 auto;width:240px;height:auto;border-radius:22px;scroll-snap-align:start;box-shadow:0 18px 40px -22px rgba(0,0,0,.6)}
 .cards-wrap{padding-block:56px 24px}
 .grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
 .fcard{background:var(--surface);border:1px solid var(--line);border-radius:24px;padding:26px 24px}
 .fcard .ic{width:46px;height:46px;border-radius:14px;display:grid;place-items:center;background:var(--soft);color:var(--accent);margin-bottom:18px}
 .fcard h3{font-family:ui-serif,"New York",Georgia,serif;font-weight:500;font-size:22px;line-height:1.2;margin:0 0 8px}
 .fcard p{color:var(--muted);font-size:16px;margin:0}
-.band{background:linear-gradient(100deg,#183428,#2b5240);color:#FAF8EE;border-radius:32px;padding:52px 44px;margin-block:56px 24px;display:grid;grid-template-columns:.9fr 1.1fr;gap:32px;align-items:center}
+.band{background:linear-gradient(100deg,#162E23,#1F4232);color:#FAF8EE;border-radius:32px;padding:52px 44px;margin-block:56px 24px;display:grid;grid-template-columns:.9fr 1.1fr;gap:32px;align-items:center}
 .band h2{font-size:clamp(32px,4.6vw,48px);line-height:1.05;letter-spacing:-.02em;margin:0}
 .band .lockic{width:52px;height:52px;border-radius:16px;display:grid;place-items:center;background:rgba(250,248,238,.12);margin-bottom:18px}
 .band ul{list-style:none;padding:0;margin:0;display:grid;gap:12px}
@@ -641,7 +640,7 @@ def page(lang, slug, title, body, description, stage=None):
 <title>{html.escape(title)}</title>
 <meta name="description" content="{html.escape(description)}">
 <meta name="color-scheme" content="light dark">
-{'<meta name="theme-color" content="#183428">' if stage else ''}
+{'<meta name="theme-color" content="#101B16">' if stage else ''}
 <meta property="og:title" content="{html.escape(title)}">
 <meta property="og:description" content="{html.escape(description)}">
 <meta property="og:image" content="https://aetsr.github.io/sparios-site/assets/icon-512.png">
@@ -691,7 +690,7 @@ def build():
                  f'<div class="art"><img src="../assets/{lang}/hero.webp" width="960" height="1144" alt="{html.escape(h["shot"])}"></div></section>')
         shots = "".join(
             f'<img src="../assets/{lang}/{g}.jpg" width="560" height="1217" loading="lazy" alt="{html.escape(h["shot"])}"'
-            + (' class="pair"' if g == "panorama-1" else ' class="pair2"' if g == "panorama-2" else "") + ">"
+            + ">"
             for g in GALLERY
         )
         cards = "".join(
