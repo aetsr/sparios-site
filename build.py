@@ -74,7 +74,7 @@ COFFEE_URL = "https://www.buymeacoffee.com/sparios"
 HOME = {
     "en": {
         "title": "Sparios · A spending journal that fills itself in",
-        "hero": "Tap to pay.<br>Sparios writes it down.",
+        "hero": "Pay with Apple Pay.<br>Sparios writes it down.",
         "sub": "A spending journal that fills itself in. Pay with any card in your Wallet and see what’s left this month. No bank login, no account, nothing leaves your iPhone.",
         "soon": "Coming soon to the App Store", "get": "Free on the App Store",
         "trust": ["Free", "No account", "No tracking"],
@@ -98,7 +98,7 @@ HOME = {
     },
     "tr": {
         "title": "Sparios · Kendi kendine dolan harcama defteri",
-        "hero": "Öde.<br>Sparios not alsın.",
+        "hero": "Apple Pay ile öde.<br>Sparios not alsın.",
         "sub": "Kendi kendine dolan bir harcama defteri. Wallet’taki hangi kartla ödersen öde, bu ay ne kaldığını gör. Banka girişi yok, hesap yok, hiçbir şey iPhone’undan çıkmaz.",
         "soon": "Yakında App Store’da", "get": "App Store’da ücretsiz",
         "trust": ["Ücretsiz", "Hesap yok", "Takip yok"],
@@ -122,7 +122,7 @@ HOME = {
     },
     "de": {
         "title": "Sparios · Ein Ausgabenbuch, das sich selbst füllt",
-        "hero": "Bezahlen.<br>Sparios schreibt mit.",
+        "hero": "Mit Apple Pay zahlen.<br>Sparios schreibt mit.",
         "sub": "Ein Ausgabenbuch, das sich selbst füllt. Zahl mit jeder Karte aus deinem Wallet und sieh, was diesen Monat übrig ist. Kein Bank-Login, kein Konto, nichts verlässt dein iPhone.",
         "soon": "Bald im App Store", "get": "Kostenlos im App Store",
         "trust": ["Kostenlos", "Kein Konto", "Kein Tracking"],
